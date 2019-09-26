@@ -52,7 +52,7 @@
   border-radius: 10px;
   text-align: center;
   padding: 50px;
-  max-height: 300px;
+  min-height: 300px;
   background-image: url(../assets/tim-mossholder-244857-unsplash.jpg);
   background-size: cover;
   background-blend-mode: darken;
@@ -82,9 +82,9 @@
 
 .profile-pic {
   position: absolute;
-  top: 50%;
+  top: 100%;
   left: 10%;
-  transform: translate(-50%, -30%);
+  transform: translate(-50%, -100%);
   border-radius: 15px;
   height: 200px;
   width: 200px;
@@ -94,5 +94,22 @@
 
 .slides {
   /* width: 100%; */
-  /* display: flex; */
+  display: flex;
+}
+
+.slide-left,
+.slide-right {
+  width: 50%;
+  height: 500px;
+  background: whitesmoke;
+  margin: 5px;
+  border-radius: 4px;
+}
+
+.slide-left {
+  margin-left: 0;
+}
+
+.slide-right {
+  margin-right: 0;
 }
