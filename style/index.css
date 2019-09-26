@@ -6,79 +6,88 @@
 }
 
 .container {
-  position: relative;
-  background-color: rgb(255, 255, 255);
   width: 100%;
-  padding: 20px 0px;
+  min-height: 100vh;
+  display: flex;
+  background-image: url(../assets/bg.jpg);
+  background-size: cover;
 }
 
-/* Menu */
-.menu {
-  position: absolute;
+.hamburger {
   height: 60px;
-  width: 60px;
-  left: 0%;
+  width: 50px;
+  margin: auto;
+  margin-top: 40px;
 }
+.menu-left,
+.menu-right {
+  width: 10%;
+}
+
 .top,
 .middle,
 .bottom {
-  width: 60%;
-  height: 1px;
+  width: 80%;
+  height: 2px;
   margin: 8px auto;
-  background-color: rgb(65, 65, 65);
+  background-color: rgb(0, 174, 255);
   border-radius: 3px;
 }
 
 .main-box {
-  max-width: 70%;
   border-radius: 10px;
-  margin: auto;
-  margin-bottom: 20px;
   min-height: 300px;
   background-color: rgb(119, 119, 119);
   color: whitesmoke;
   text-align: center;
 }
 
+.main-content {
+  width: 100%;
+}
+/* -------------------------------------------------------------------- */
+
 /* First Box Introduction */
 
 .introduction {
-  /* min-height: 400px;  */
+  position: relative;
   padding: 50px;
+  /* padding-bottom: 0px; */
+  background-image: url(../assets/tim-mossholder-244857-unsplash.jpg);
+  background-size: cover;
+  background-blend-mode: darken;
 }
 
 .introduction h1 {
-  font-size: 50px;
+  font-size: 60px;
+  letter-spacing: 10px;
   color: aqua;
+  text-shadow: 0px 0px 4px black;
+}
+
+.introduction h3 {
+  letter-spacing: 15px;
+  font-size: 24px;
+  margin: 6px 0px 0px 0px;
+  color: rgb(166, 172, 179);
+  text-shadow: 0px 0px 4px black;
+}
+.introduction h4 {
+  letter-spacing: 5px;
+  font-size: 30px;
+  margin: 80px 0px 0px 0px;
+  color: rgb(166, 172, 179);
+  text-shadow: 0px 0px 10px black;
 }
 
 .profile-pic {
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  transform: translate(-50%, -55%);
   border-radius: 50%;
   height: 200px;
   width: 200px;
-  border: 1px solid black;
-}
-
-.profile ul {
-  margin: auto;
-  width: 90%;
-  /* display: flex; */
-  /* justify-content: center;
-  align-content: center; */
-  /* flex-direction: column; */
-  /* flex-flow: column; */
-}
-
-.profile ul li {
-  display: inline;
-  font-size: 25px;
-  /* display: flex; */
-  margin: 0px 40px;
-  /* margin-right: 80px; */
-}
-
-.profile ul li:hover {
-  text-decoration: underline;
-  color: rgb(88, 88, 151);
-  transition: all 100ms ease-out;
+  /* border: 1px solid white; */
+  box-shadow: 0px 0px 6px rgb(0, 89, 255);
 }
