@@ -27,6 +27,7 @@
 .menu-left,
 .menu-right {
   width: 10%;
+  background-color: black;
 }
 
 .top,
@@ -39,14 +40,6 @@
   border-radius: 3px;
 }
 
-.main-box {
-  border-radius: 10px;
-  min-height: 300px;
-  background-color: rgb(119, 119, 119);
-  color: whitesmoke;
-  text-align: center;
-}
-
 .main-content {
   width: 100%;
 }
@@ -56,9 +49,10 @@
 
 .introduction {
   position: relative;
+  border-radius: 10px;
+  text-align: center;
   padding: 50px;
   max-height: 300px;
-  /* padding-bottom: 0px; */
   background-image: url(../assets/tim-mossholder-244857-unsplash.jpg);
   background-size: cover;
   background-blend-mode: darken;
@@ -96,4 +90,9 @@
   width: 200px;
   border: 1px solid white;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+}
+
+.slides {
+  /* width: 100%; */
+  /* display: flex; */
 }
