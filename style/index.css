@@ -85,7 +85,7 @@
   top: 100%;
   left: 10%;
   transform: translate(-50%, -100%);
-  border-radius: 15px;
+  border-radius: 50%;
   height: 200px;
   width: 200px;
   border: 1px solid white;
@@ -95,6 +95,7 @@
 .slides {
   /* width: 100%; */
   display: flex;
+  justify-content: space-between;
 }
 
 .slide-left,
