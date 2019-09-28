@@ -15,29 +15,39 @@ $(".main-content .introduction img").src = userInfo.img;
 
 $(".inn-left").onclick = function() {
   var menuLeft = $(".menu-left-content");
+  var slideLeft = $(".slide-left");
   if (!menuLeft.classList.contains("menu-content-animation")) {
     menuLeft.classList.add("menu-content-animation");
+    slideLeft.classList.add("slide-opacity-action");
   }
 };
 
 $(".inn-right").onclick = function() {
   var menuRight = $(".menu-right-content");
+  var slideRight = $(".slide-right");
   if (!menuRight.classList.contains("menu-content-animation")) {
     menuRight.classList.add("menu-content-animation");
+    slideRight.classList.add("slide-opacity-action");
   }
 };
 
-$(".menu-left .close").onclick = function() {
+$(".menu-left-content .close").onclick = function() {
   var menuLeft = $(".menu-left-content");
+  var slideLeft = $(".slide-left");
   if (menuLeft.classList.contains("menu-content-animation")) {
     menuLeft.classList.remove("menu-content-animation");
+    slideLeft.classList.remove("slide-opacity-action");
+    slideLeft.classList.remove("slide-left-action");
   }
 };
 
 $(".menu-right-content .close").onclick = function() {
   var menuRight = $(".menu-right-content");
+  var slideRight = $(".slide-right");
   if (menuRight.classList.contains("menu-content-animation")) {
     menuRight.classList.remove("menu-content-animation");
+    slideRight.classList.remove("slide-opacity-action");
+    slideRight.classList.remove("slide-right-action");
   }
 };
 
