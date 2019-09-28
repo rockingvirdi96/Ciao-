@@ -29,10 +29,12 @@
   margin-top: 40px;
 }
 
-.inn {
+.inn-right,
+.inn-left {
   position: absolute;
   top: 50%;
   left: 50%;
+  border: 2px solid black;
   transform: translate(-50%, -50%);
   width: 100%;
 }
@@ -129,23 +131,22 @@
   border: 2px solid white;
   min-height: 500px;
   max-height: 600px;
-  background: rgb(105, 105, 105);
+  background: rgb(77, 77, 77);
   margin: 5px;
   border-radius: 4px;
   opacity: 0;
-  transition: width 500ms ease-in;
+  transition: width 200ms ease-out;
 }
 
 .slide-opacity-action {
   opacity: 1;
-  /* transition: all 1s ease-in; */
 }
 
 .slide-left-action,
 .slide-right-action {
   opacity: 1;
   width: 50%;
-  transition: all 500ms ease-out;
+  transition: all 200ms ease-in;
 }
 
 .slide-left {
@@ -160,9 +161,10 @@
   position: fixed;
   width: 100%;
   padding: 20px;
-  background-color: aquamarine;
+  background-color: rgb(0, 45, 66);
   bottom: 0;
   text-align: center;
+  color: white;
 }
 
 /* SIDEBARS */
@@ -178,7 +180,7 @@
 .menu-left-content {
   position: absolute;
   text-align: center;
-  background-color: rgb(0, 59, 98);
+  background-color: rgb(0, 98, 179);
   width: 100%;
   min-height: 100vh;
   top: 0%;
@@ -195,13 +197,14 @@
 
 .menu-right-content .close,
 .menu-left-content .close {
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   margin: auto;
   background-image: url(../assets/cross.png);
   background-size: cover;
   opacity: 0.5;
   border-radius: 50%;
+  border: 2px dashed black;
 }
 
 .menu-left-content ul li,

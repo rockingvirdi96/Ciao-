@@ -61,7 +61,7 @@ for (i = 0; i < listt.length; i++) {
       slideRight.classList.remove("slide-right-action");
       setTimeout(function() {
         slideRight.classList.toggle("slide-right-action");
-      }, 800);
+      }, 200);
     }
   };
 }
@@ -76,7 +76,7 @@ for (i = 0; i < list.length; i++) {
       slideLeft.classList.remove("slide-left-action");
       setTimeout(function() {
         slideLeft.classList.toggle("slide-left-action");
-      }, 800);
+      }, 300);
     }
   };
 }
