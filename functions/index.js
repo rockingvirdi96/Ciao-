@@ -15,23 +15,31 @@ $(".main-content .introduction h4").innerText = userInfo.description;
 $(".main-content .introduction img").src = userInfo.img;
 
 $(".inn-left").onclick = function() {
-  var menuLeft = $(".menu-left-content").style;
-  menuLeft.display = "block";
+  var menuLeft = $(".menu-left-content");
+  if (!menuLeft.classList.contains("menu-content-animation")) {
+    menuLeft.classList.add("menu-content-animation");
+  }
 };
 
 $(".inn-right").onclick = function() {
-  var menuRight = $(".menu-right-content").style;
-  menuRight.display = "block";
+  var menuRight = $(".menu-right-content");
+  if (!menuRight.classList.contains("menu-content-animation")) {
+    menuRight.classList.add("menu-content-animation");
+  }
 };
 
 $(".menu-left .close").onclick = function() {
-  var menuLeft = $(".menu-left-content").style;
-  menuLeft.display = "none";
+  var menuLeft = $(".menu-left-content");
+  if (menuLeft.classList.contains("menu-content-animation")) {
+    menuLeft.classList.remove("menu-content-animation");
+  }
 };
 
-$(".menu-right .close").onclick = function() {
-  var menuRight = $(".menu-right-content").style;
-  menuRight.display = "none";
+$(".menu-right-content .close").onclick = function() {
+  var menuRight = $(".menu-right-content");
+  if (menuRight.classList.contains("menu-content-animation")) {
+    menuRight.classList.remove("menu-content-animation");
+  }
 };
 
 $(".menu-right-content ul li").onclick = function() {

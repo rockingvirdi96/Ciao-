@@ -163,7 +163,14 @@
   top: 0%;
   display: none;
   padding: 5vh 0px;
-  /* traform */
+  transform: translateY(-100%);
+  /* transition: all 1s ease-in; */
+}
+
+.menu-content-animation {
+  display: block;
+  transform: translateY(0%);
+  /* transition: all 1s ease-out; */
 }
 
 .menu-right-content .close,
