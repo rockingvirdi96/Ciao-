@@ -5,13 +5,12 @@ $ = e => {
 var userInfo = {
   name: "RUPINDER PAL SINGH",
   profession: "WEB DEVELOPER",
-  description: "...welcome to my lair...",
+  description: ".Ca va bien?.",
   img: "../assets/download.png"
 };
 
 $(".main-content .introduction h1").innerText = userInfo.name;
 $(".main-content .introduction h3").innerText = userInfo.profession;
-$(".main-content .introduction h4").innerText = userInfo.description;
 $(".main-content .introduction img").src = userInfo.img;
 
 $(".inn-left").onclick = function() {
@@ -42,20 +41,32 @@ $(".menu-right-content .close").onclick = function() {
   }
 };
 
-$(".menu-right-content ul li").onclick = function() {
-  var slideRight = $(".slide-right");
-  if (!slideRight.classList.contains("slide-right-action")) {
-    slideRight.classList.add("slide-right-action");
-  } else {
-    slideRight.classList.remove("slide-right-action");
-  }
-};
+listt = $(".menu-right-content ul").children;
+for (i = 0; i < listt.length; i++) {
+  listt[i].onclick = function() {
+    var slideRight = $(".slide-right");
+    if (!slideRight.classList.contains("slide-right-action")) {
+      slideRight.classList.add("slide-right-action");
+    } else {
+      slideRight.classList.remove("slide-right-action");
+      setTimeout(function() {
+        slideRight.classList.toggle("slide-right-action");
+      }, 800);
+    }
+  };
+}
 
-$(".menu-left-content ul li").onclick = function() {
-  var slideRight = $(".slide-left");
-  if (!slideRight.classList.contains("slide-left-action")) {
-    slideRight.classList.add("slide-left-action");
-  } else {
-    slideRight.classList.remove("slide-left-action");
-  }
-};
+list = $(".menu-left-content ul").children;
+for (i = 0; i < list.length; i++) {
+  list[i].onclick = function() {
+    var slideLeft = $(".slide-left");
+    if (!slideLeft.classList.contains("slide-left-action")) {
+      slideLeft.classList.add("slide-left-action");
+    } else {
+      slideLeft.classList.remove("slide-left-action");
+      setTimeout(function() {
+        slideLeft.classList.toggle("slide-left-action");
+      }, 800);
+    }
+  };
+}
