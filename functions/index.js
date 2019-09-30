@@ -4,14 +4,14 @@ $ = e => {
 
 var userInfo = {
   name: "RUPINDER PAL SINGH",
-  profession: "WEB DEVELOPER",
+  profession: "WEB DEVELOPER"
   // description: ".Ca va bien?.",
-  img: "../assets/download.png"
+  // img: "../assets/download.png"
 };
 
 $(".main-content .introduction h1").innerText = userInfo.name;
 $(".main-content .introduction h3").innerText = userInfo.profession;
-$(".main-content .introduction img").src = userInfo.img;
+// $(".main-content .introduction img").src = userInfo.img;
 
 $(".inn-left").onclick = function() {
   var menuLeft = $(".menu-left-content");
