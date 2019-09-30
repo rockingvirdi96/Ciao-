@@ -5,7 +5,7 @@ $ = e => {
 var userInfo = {
   name: "RUPINDER PAL SINGH",
   profession: "WEB DEVELOPER",
-  description: ".Ca va bien?.",
+  // description: ".Ca va bien?.",
   img: "../assets/download.png"
 };
 
