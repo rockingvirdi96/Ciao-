@@ -49,7 +49,6 @@ $(".menu-right-content .close").onclick = function() {
   var menuRight = $(".menu-right-content");
   var slideRight = $(".slide-right");
   if (menuRight.classList.contains("menu-content-animation")) {
-    // menuRight.classList.remove("menu-content-animation");
     setTimeout(function() {
       menuRight.classList.remove("menu-content-animation");
     }, 300);
