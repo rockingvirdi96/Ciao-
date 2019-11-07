@@ -49,13 +49,21 @@ $(".menu-right-content .close").onclick = function() {
   var menuRight = $(".menu-right-content");
   var slideRight = $(".slide-right");
   if (menuRight.classList.contains("menu-content-animation")) {
-    setTimeout(function() {
-      menuRight.classList.remove("menu-content-animation");
-    }, 300);
-    setTimeout(function() {
+    if (slideRight.classList.contains("slide-right-action")) {
+      setTimeout(function() {
+        menuRight.classList.remove("menu-content-animation");
+      }, 300);
+      setTimeout(function() {
+        slideRight.classList.remove("slide-right-action");
+        slideRight.classList.remove("slide-opacity-action");
+      }, 200);
+    } else {
+      setTimeout(function() {
+        menuRight.classList.remove("menu-content-animation");
+      }, 100);
       slideRight.classList.remove("slide-opacity-action");
-    }, 200);
-    slideRight.classList.remove("slide-right-action");
+    }
+    // slideRight.classList.remove("slide-right-action");
   }
 };
 
