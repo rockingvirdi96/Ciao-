@@ -4,16 +4,16 @@ $ = e => {
 
 var userInfo = {
   name: "RUPINDER PAL SINGH",
-  profession: "WEB DEVELOPER"
+  profession: "WEB DEVELOPER",
   // description: ".Ca va bien?.",
-  // img: "../assets/download.png"
+  img: "../assets/download.png"
 };
 
 $(".main-content .introduction h1").innerText = userInfo.name;
 $(".main-content .introduction h3").innerText = userInfo.profession;
-// $(".main-content .introduction img").src = userInfo.img;
+$(".main-content .introduction img").attr("src", userInfo.img);
 
-$(".inn-left").onclick = function() {
+$(".inn-left").onclick = function () {
   var menuLeft = $(".menu-left-content");
   var slideLeft = $(".slide-left");
   if (!menuLeft.classList.contains("menu-content-animation")) {
@@ -22,7 +22,7 @@ $(".inn-left").onclick = function() {
   }
 };
 
-$(".inn-right").onclick = function() {
+$(".inn-right").onclick = function () {
   var menuRight = $(".menu-right-content");
   var slideRight = $(".slide-right");
   if (!menuRight.classList.contains("menu-content-animation")) {
@@ -31,34 +31,34 @@ $(".inn-right").onclick = function() {
   }
 };
 
-$(".menu-left-content .close").onclick = function() {
+$(".menu-left-content .close").onclick = function () {
   var menuLeft = $(".menu-left-content");
   var slideLeft = $(".slide-left");
   if (menuLeft.classList.contains("menu-content-animation")) {
-    setTimeout(function() {
+    setTimeout(function () {
       menuLeft.classList.remove("menu-content-animation");
     }, 300);
-    setTimeout(function() {
+    setTimeout(function () {
       slideLeft.classList.remove("slide-opacity-action");
     }, 200);
     slideLeft.classList.remove("slide-left-action");
   }
 };
 
-$(".menu-right-content .close").onclick = function() {
+$(".menu-right-content .close").onclick = function () {
   var menuRight = $(".menu-right-content");
   var slideRight = $(".slide-right");
   if (menuRight.classList.contains("menu-content-animation")) {
     if (slideRight.classList.contains("slide-right-action")) {
-      setTimeout(function() {
+      setTimeout(function () {
         menuRight.classList.remove("menu-content-animation");
       }, 300);
-      setTimeout(function() {
+      setTimeout(function () {
         slideRight.classList.remove("slide-right-action");
         slideRight.classList.remove("slide-opacity-action");
       }, 200);
     } else {
-      setTimeout(function() {
+      setTimeout(function () {
         menuRight.classList.remove("menu-content-animation");
       }, 100);
       slideRight.classList.remove("slide-opacity-action");
@@ -69,13 +69,13 @@ $(".menu-right-content .close").onclick = function() {
 
 listt = $(".menu-right-content ul").children;
 for (i = 0; i < listt.length; i++) {
-  listt[i].onclick = function() {
+  listt[i].onclick = function () {
     var slideRight = $(".slide-right");
     if (!slideRight.classList.contains("slide-right-action")) {
       slideRight.classList.add("slide-right-action");
     } else {
       slideRight.classList.remove("slide-right-action");
-      setTimeout(function() {
+      setTimeout(function () {
         slideRight.classList.toggle("slide-right-action");
       }, 200);
     }
@@ -84,13 +84,13 @@ for (i = 0; i < listt.length; i++) {
 
 list = $(".menu-left-content ul").children;
 for (i = 0; i < list.length; i++) {
-  list[i].onclick = function() {
+  list[i].onclick = function () {
     var slideLeft = $(".slide-left");
     if (!slideLeft.classList.contains("slide-left-action")) {
       slideLeft.classList.add("slide-left-action");
     } else {
       slideLeft.classList.remove("slide-left-action");
-      setTimeout(function() {
+      setTimeout(function () {
         slideLeft.classList.toggle("slide-left-action");
       }, 300);
     }
