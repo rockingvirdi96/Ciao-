@@ -136,7 +136,7 @@
 .slide-left-action,
 .slide-right-action {
   opacity: 1;
-  width: 50%;
+  width: 100%;
   transition: all 200ms ease-in;
 }
 
@@ -176,6 +176,7 @@
   min-height: 100vh;
   top: 0%;
   padding: 5vh 0px;
+
   transform: translateY(-100%);
   transition: all 500ms ease-in;
 }
@@ -197,11 +198,19 @@
   border-radius: 50%;
   border: 2px dashed black;
 }
-
+ul {
+  text-align: center;
+}
 .menu-left-content ul li,
 .menu-right-content ul li {
   font-size: 100%;
   color: white;
-  margin: 100px 0px;
+  margin: 100px auto;
   padding: 10px;
+  border: 2px solid black;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  background-color: aliceblue;
+  background-size: cover;
 }
