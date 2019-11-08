@@ -4,9 +4,17 @@ $ = e => {
 
 var userInfo = {
   name: "RUPINDER PAL SINGH",
-  profession: "WEB DEVELOPER"
-  // description: ".Ca va bien?.",
+  profession: "WEB DEVELOPER",
+  description: ".Ca va bien?."
 };
+var education = {
+  Course: ["Higher Secondary School ghjklhjkl", "Bachelors in Computer Science", "AEC Diploma I.T Programmer Analyst"],
+  Institute: ["C.T Public School", "D.A.V College", "La Salle College"],
+  Location: ["Jalandhar,India", "Jalandhar,India", "Montreal,Quebec"],
+  Duration: ["till 2014", "2014-2017", "Current"]
+};
+var projects = {};
+var skills = {};
 
 $(".main-content .introduction h1").innerText = userInfo.name;
 $(".main-content .introduction h3").innerText = userInfo.profession;
@@ -86,6 +94,9 @@ for (i = 0; i < list.length; i++) {
     var slideLeft = $(".slide-left");
     if (!slideLeft.classList.contains("slide-left-action")) {
       slideLeft.classList.add("slide-left-action");
+      for (var x = 0; x < education.Course.length; x++) {
+        $(".slides .slide-left .left-slide-content").innerHTML += `<ul type="none" class="course-module"><li>${education.Course[x]}</li><li>${education.Institute[x]}</li><li>${education.Location[x]}</li><li>${education.Duration[x]}</li></ul>`;
+      };
     } else {
       slideLeft.classList.remove("slide-left-action");
       setTimeout(function () {
@@ -94,3 +105,10 @@ for (i = 0; i < list.length; i++) {
     }
   };
 }
+
+// function displayInformation() {
+// education.Course.forEach(element => {
+//   $(".slides .slide-left ul").innerHtml += "<li></li>";
+// });
+
+// }
