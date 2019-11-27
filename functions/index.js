@@ -8,7 +8,7 @@ var userInfo = {
   description: ".Ca va bien?."
 };
 var education = {
-  Course: ["Higher Secondary School ghjklhjkl", "Bachelors in Computer Science", "AEC Diploma I.T Programmer Analyst"],
+  Course: ["Higher Secondary School", "Bachelors in Computer Science", "AEC Diploma I.T Programmer Analyst"],
   Institute: ["C.T Public School", "D.A.V College", "La Salle College"],
   Location: ["Jalandhar,India", "Jalandhar,India", "Montreal,Quebec"],
   Duration: ["till 2014", "2014-2017", "Current"]
@@ -69,7 +69,6 @@ $(".menu-right-content .close").onclick = function () {
       }, 100);
       slideRight.classList.remove("slide-opacity-action");
     }
-    // slideRight.classList.remove("slide-right-action");
   }
 };
 
@@ -88,27 +87,24 @@ for (i = 0; i < listt.length; i++) {
   };
 }
 
+for (var x = 0; x < education.Course.length; x++) {
+  $(".slides .slide-left .left-slide-content").innerHTML += `<ul type="none" class="course-module"><li>${education.Course[x]}</li><li>${education.Institute[x]}</li><li>${education.Location[x]}</li><li>${education.Duration[x]}</li></ul>`;
+};
 list = $(".menu-left-content ul").children;
 for (i = 0; i < list.length; i++) {
   list[i].onclick = function () {
+    x = true;
     var slideLeft = $(".slide-left");
     if (!slideLeft.classList.contains("slide-left-action")) {
       slideLeft.classList.add("slide-left-action");
-      for (var x = 0; x < education.Course.length; x++) {
-        $(".slides .slide-left .left-slide-content").innerHTML += `<ul type="none" class="course-module"><li>${education.Course[x]}</li><li>${education.Institute[x]}</li><li>${education.Location[x]}</li><li>${education.Duration[x]}</li></ul>`;
-      };
-    } else {
+    }
+    else {
       slideLeft.classList.remove("slide-left-action");
+      $(".slides .slide-left .left-slide-content").style.display = "none";
       setTimeout(function () {
         slideLeft.classList.toggle("slide-left-action");
+        $(".slides .slide-left .left-slide-content").style.display = "";
       }, 300);
     }
   };
 }
-
-// function displayInformation() {
-// education.Course.forEach(element => {
-//   $(".slides .slide-left ul").innerHtml += "<li></li>";
-// });
-
-// }
