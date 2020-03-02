@@ -36,6 +36,7 @@
 }
 
 .name h1 {
+  width: 100%;
   font-size: 60px;
   letter-spacing: 2px;
   font-weight: normal;
@@ -43,6 +44,8 @@
 }
 
 .name h3 {
+  width: 100%;
+  text-align: left;
   font-size: 20px;
   letter-spacing: 4px;
 
@@ -50,7 +53,7 @@
 
 .address {
   flex: 2;
-  font-size: 20px;
+  font-size: 15px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
