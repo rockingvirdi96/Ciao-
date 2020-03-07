@@ -4,8 +4,8 @@
         min-height: 150px;
     }
 
-    .name {
-        margin-top: 20px;
+    .name ul li {
+        font-size: 8px;
     }
 
     .name h1 {
@@ -18,11 +18,11 @@
     }
 
     .address li {
-        font-size: 8px;
+        font-size: 5px;
     }
 
     .address li img {
-        height: 5px;
-        width: 5px;
+        height: 15px;
+        width: 15px;
     }
 }

@@ -1,75 +1,98 @@
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
+  user-select: none;
 }
 
+/* body {
+  position: relative;
+} */
+
 .container {
+  position: relative;
   width: 100%;
-  background-image: linear-gradient(-45deg, rgb(0, 69, 76), rgb(0, 69, 76), rgb(0, 136, 151), rgb(34, 159, 173));
 }
 
 .section {
-  min-height: 400px;
-  width: 60%;
-  margin: 0.1px solid white;
+  position: sticky;
+  top: 0%;
+  height: 100vh;
+  width: 100%;
+  background-color: #333;
+}
+
+.section:nth-child(2) {
+  background-color: #fff;
+}
+.section:nth-child(2) {
+  background-color: #fff;
+}
+.section:nth-child(2) {
+  background-color: #fff;
+}
+.about .innerSection {
+  background: #fff;
+}
+
+.innerSection {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  background: url(https://web.whatsapp.com/img/bg-chat-tile_9e8a2898faedb7db9bf5638405cf81ae.png),
+    linear-gradient(0deg, rgb(0, 109, 143), rgb(0, 192, 250), rgb(81, 214, 255));
+  background-blend-mode: soft-light;
+  border-radius: 2px;
   margin: auto;
 }
 
-.intro {
-  position: relative;
-  background-image: url(../assets/background1.jpg);
-  background-size: cover;
-  padding: 10px;
+.intro .innerSection {
   display: flex;
-  font-family: Roboto Mono;
-  border-radius: 10px 10px 0px 0px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: black;
+  padding: 50px;
+}
+
+.profile-pic {
+  height: auto;
+  width: 20%;
+  box-shadow: 0px 0px 5px rgba(20, 17, 17, 0.4);
+  border-radius: 50%;
+  background-size: cover;
+  box-shadow: 0px 0px 10px 1px rgba(20, 17, 17, 0.8);
 }
 
 .name {
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: rgb(0, 49, 75);
+  font-size: 4.5vw;
+  font-family: Roboto mono;
+  letter-spacing: 5px;
+  text-align: center;
+  background: linear-gradient(
+    to right,
+    rgb(2, 104, 172),
+    rgb(0, 47, 92),
+    rgb(1, 119, 197)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
-.name h1 {
-  width: 100%;
-  font-size: 60px;
-  letter-spacing: 2px;
-  font-weight: normal;
-  text-align: left;
-}
-
-.name h3 {
-  width: 100%;
-  text-align: left;
-  font-size: 20px;
-  letter-spacing: 4px;
-
-}
-
-.address {
-  flex: 2;
-  font-size: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-end;
-  text-align: right;
+.profession {
+  font-size: 2vw;
+  font-family: Roboto mono;
   color: white;
 }
 
-.address ul {
-  text-align: right;
+.welcome {
+  display: flex;
+  font-family: Roboto mono;
+  font-size: 1.5vw;
+  width: auto;
 }
 
-.address ul li:nth-child(1),
-li:nth-child(3) {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-
+.welcome li {
+  margin: 5px;
 }

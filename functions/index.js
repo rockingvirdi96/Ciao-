@@ -6,9 +6,7 @@ const userInfo = {
   name: "RUPINDER PAL SINGH",
   profession: "WEB DEVELOPER",
   address: "rupindervirdi96@gmail.com",
-  phoneNumber: "+1(438)998-1746",
-
-
+  phone: "+1(438)998-1746",
 };
 
 const education = {
@@ -25,3 +23,9 @@ const experience = {
   Duration: ["04/2014-04/2017", "01/2019 - 04/2020"],
   Description: []
 }
+
+function sayHEllo() {
+  console.log("hello");
+
+}
+console.log(sayHEllo.prototype);
