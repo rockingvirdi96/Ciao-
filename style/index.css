@@ -6,6 +6,11 @@
 
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .container {
   position: relative;
   width: 100%;
