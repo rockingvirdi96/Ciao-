@@ -1,28 +1,33 @@
 @media only screen and (max-width:800px) {
-    .section {
+
+    .innerSection {
         width: 100%;
-        min-height: 150px;
     }
 
-    .name ul li {
-        font-size: 8px;
+    .buttons {
+        width: 60%;
     }
 
-    .name h1 {
+    .buttons div {
+        flex: 3;
+    }
+
+    .name {
+        font-size: 40px;
+    }
+
+    .profession {
         font-size: 20px;
-        text-align: left;
     }
 
-    .name h3 {
+    .links {
         font-size: 10px;
     }
 
-    .address li {
-        font-size: 5px;
+    #btnHireMe,
+    #getCv {
+        flex: none;
+        padding: 3px 5px;
     }
 
-    .address li img {
-        height: 15px;
-        width: 15px;
-    }
 }

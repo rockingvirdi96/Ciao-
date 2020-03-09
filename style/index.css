@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   user-select: none;
+
 }
 
 /* body {
@@ -12,12 +13,13 @@
 .container {
   position: relative;
   width: 100%;
+  transition: 1s all linear;
 }
 
 .section {
   position: sticky;
   top: 0%;
-  height: 100vh;
+  min-height: 50vh;
   width: 100%;
   background-color: #333;
 }
@@ -25,12 +27,7 @@
 .section:nth-child(2) {
   background-color: #fff;
 }
-.section:nth-child(2) {
-  background-color: #fff;
-}
-.section:nth-child(2) {
-  background-color: #fff;
-}
+
 .about .innerSection {
   background: #fff;
 }
@@ -38,7 +35,7 @@
 .innerSection {
   position: relative;
   width: 80%;
-  height: 100%;
+  height: 50vh;
   background: url(https://web.whatsapp.com/img/bg-chat-tile_9e8a2898faedb7db9bf5638405cf81ae.png),
     linear-gradient(0deg, rgb(0, 109, 143), rgb(0, 192, 250), rgb(81, 214, 255));
   background-blend-mode: soft-light;
@@ -69,12 +66,10 @@
   font-family: Roboto mono;
   letter-spacing: 5px;
   text-align: center;
-  background: linear-gradient(
-    to right,
-    rgb(2, 104, 172),
-    rgb(0, 47, 92),
-    rgb(1, 119, 197)
-  );
+  background: linear-gradient(to right,
+      rgb(2, 104, 172),
+      rgb(0, 47, 92),
+      rgb(1, 119, 197));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -86,13 +81,47 @@
   color: white;
 }
 
-.welcome {
+.buttons {
+  width: 60%;
+  margin: auto;
   display: flex;
-  font-family: Roboto mono;
-  font-size: 1.5vw;
-  width: auto;
 }
 
-.welcome li {
-  margin: 5px;
+.buttons div {
+  flex: 5;
 }
+
+#btnHireMe,
+#getCv {
+  flex: 1;
+  width: auto;
+  padding: 8px 10px;
+  border: 3px solid white;
+  border-radius: 3px;
+  background: linear-gradient(0deg, rgb(61, 0, 141), rgb(44, 53, 167));
+  color: white;
+}
+
+.links {
+  width: 100%;
+  display: flex;
+  font-family: Roboto mono;
+  font-weight: bold;
+}
+
+.links li {
+  flex: 1;
+  /* margin: 0px 25px; */
+  text-align: center;
+  padding: 10px 0px;
+  font-size: 1em;
+  background-color: rgb(0, 119, 255);
+  border: 1px solid white;
+  border-top: none;
+}
+
+.links li:hover {
+  color: white;
+}
+
+.links li:active {}
