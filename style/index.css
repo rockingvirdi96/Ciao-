@@ -18,11 +18,9 @@
   height: auto;
   width: 100%;
   background-color: #333;
+  border: 1px solid white;
 }
 
-.section:nth-child(2) {
-  background-color: #eee;
-}
 
 .section:nth-child(3) {
   height: 50vh;
@@ -131,4 +129,9 @@
 
 .links li:active {
   color: white;
+}
+
+
+.information {
+  /* position: relative; */
 }
