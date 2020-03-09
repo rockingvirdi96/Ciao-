@@ -24,7 +24,8 @@
   background-color: #333;
 }
 
-.section:nth-child(2) {
+.about,
+. .section:nth-child(2) {
   background-color: #fff;
 }
 
@@ -89,7 +90,7 @@
 }
 
 .buttons div {
-  flex: 2;
+  flex: 4;
 }
 
 #btnHireMe,
@@ -98,7 +99,7 @@
   width: auto;
   padding: 8px 10px;
   border: 3px solid white;
-  border-radius: 3px;
+  border-radius: 8px;
   background: linear-gradient(0deg, rgb(61, 0, 141), rgb(44, 53, 167));
   color: white;
 }
@@ -114,7 +115,8 @@
   flex: 1;
   text-align: center;
   padding: 10px 0px;
-  font-size: 1em;
+  font-size: 1vw;
+  font-weight: normal;
   background-color: rgb(0, 119, 255);
   border: 1px solid white;
   border-top: none;
