@@ -6,14 +6,10 @@
 
 }
 
-a {
-  text-decoration: none;
-  color: white;
-}
-
 .container {
   position: relative;
   width: 100%;
+  height: 100vh;
   transition: 1s all linear;
 }
 
@@ -23,16 +19,25 @@ a {
   height: auto;
   width: 100%;
   background-color: #333;
-  border: 1px solid white;
 }
 
 
-.section:nth-child(3) {
-  height: 50vh;
+
+.info {
+  background-color: #333;
+  /* border: 1px solid black; */
 }
 
-.section:nth-child(4) {
-  height: 50vh;
+
+.section:nth-child(4),
+.section:nth-child(5),
+.section:nth-child(6) {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100vh;
 
 }
 
@@ -40,12 +45,19 @@ a {
   background: #fff;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .innerSection {
   position: relative;
   width: 80%;
   height: auto;
+  /* background: url(https://web.whatsapp.com/img/bg-chat-tile_9e8a2898faedb7db9bf5638405cf81ae.png),
+linear-gradient(0deg, rgb(0, 109, 143), rgb(0, 192, 250), rgb(81, 214, 255)); */
   background: url(https://web.whatsapp.com/img/bg-chat-tile_9e8a2898faedb7db9bf5638405cf81ae.png),
-    linear-gradient(0deg, rgb(0, 109, 143), rgb(0, 192, 250), rgb(81, 214, 255));
+    linear-gradient(0deg, rgb(153, 153, 153), rgb(255, 255, 255), rgb(213, 245, 255));
   background-blend-mode: soft-light;
   border-radius: 2px;
   margin: auto;
@@ -134,9 +146,4 @@ a {
 
 .links li:active {
   color: white;
-}
-
-
-.information {
-  /* position: relative; */
 }

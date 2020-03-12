@@ -24,8 +24,23 @@ const experience = {
   Description: []
 }
 
-function sayHEllo() {
-  console.log("hello");
 
-}
-console.log(sayHEllo.prototype);
+//setHeight
+var height1 = $('.intro').offsetHeight;
+var height2 = $('.about').offsetHeight;
+console.log(height1);
+console.log(height2);
+var height = height1 + height2;
+
+
+$('.info .innerSection').style.height = "calc(100vh - " + height + "px)";
+$('.info').style.height = "calc(100vh - " + height + "px)";
+
+window.addEventListener('resize', () => {
+  $('.info').style.height = "calc(100vh - " + height + "px)";
+  $('.info .innerSection').style.height = "calc(100vh - " + height + "px)";
+});
+
+
+
+
