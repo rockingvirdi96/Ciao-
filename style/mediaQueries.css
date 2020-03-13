@@ -1,15 +1,19 @@
 @media only screen and (max-width:800px) {
 
+    .section {
+        width: 100%;
+    }
+
     .innerSection {
         width: 100%;
     }
 
     .buttons {
-        width: 90%;
+        width: 100%;
     }
 
     .buttons div {
-        flex: 3;
+        flex: 1;
     }
 
     .name {
@@ -26,13 +30,17 @@
 
     #btnHireMe,
     #getCv {
-        flex: none;
-        padding: 3px 5px;
+        flex: 2;
     }
 
     .links li {
-        font-size: 1.5vw;
-        font-weight: 500;
+        font-size: 10px;
+        /* font-weight: 500; */
+    }
+
+    .profile-pic {
+        height: 100px;
+        width: 100px;
     }
 
 }

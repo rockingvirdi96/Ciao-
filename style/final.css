@@ -1,0 +1,48 @@
+.name {
+    font-size: 35px;
+    font-family: Roboto mono;
+    letter-spacing: 5px;
+    text-align: center;
+    background: linear-gradient(to right,
+            rgb(2, 104, 172),
+            rgb(0, 47, 92),
+            rgb(1, 119, 197));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.profession {
+    font-size: 15px;
+    font-family: Roboto mono;
+    color: white;
+}
+
+.buttons {
+    width: 60%;
+    margin: 10px auto;
+    margin-bottom: 0px;
+    display: flex;
+}
+
+.buttons div {
+    flex: 7;
+}
+
+#btnHireMe,
+#getCv {
+    flex: 2;
+    padding: 3px 6px;
+    border: 3px solid white;
+    font-family: 'Baloo Bhai 2', cursive;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+}
+
+#btnHireMe:hover,
+#getCv:hover {
+    transition: 200ms all linear;
+    /* background: linear-gradient(45deg, rgba(255, 0, 0, 0.8), rgba(255, 73, 73, 0.8)); */
+    background-color: rgba(0, 55, 71, 0.7);
+}

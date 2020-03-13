@@ -24,6 +24,9 @@ const experience = {
   Description: []
 }
 
+const about = "Hey there welcome to the profiel of a striving Web Developer and designer. I do full stack development in Web Technologies";
+
+$('.info .innerSection span').innerText = about;
 
 //setHeight
 var height1 = $('.intro').offsetHeight;
@@ -32,13 +35,13 @@ console.log(height1);
 console.log(height2);
 var height = height1 + height2;
 
-
-$('.info .innerSection').style.height = "calc(100vh - " + height + "px)";
 $('.info').style.height = "calc(100vh - " + height + "px)";
+$('.info .innerSection').style.height = "calc(100vh - " + height + "px)";
+var link = "./functions/heightSettings.js"
 
 window.addEventListener('resize', () => {
-  $('.info').style.height = "calc(100vh - " + height + "px)";
-  $('.info .innerSection').style.height = "calc(100vh - " + height + "px)";
+  $('.scriptHeight').src = "";
+  $('.scriptHeight').src = link;
 });
 
 
