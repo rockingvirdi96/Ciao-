@@ -2,11 +2,15 @@ $ = e => {
   return document.querySelector(e);
 };
 
+$$ = e => {
+  return document.querySelectorAll(e);
+}
+
 const userInfo = {
   name: "RUPINDER PAL SINGH",
-  profession: "WEB DEVELOPER",
+  profession: "FULL STACK DEVELOPER",
   address: "rupindervirdi96@gmail.com",
-  phone: "+1(438)998-1746",
+  phone: "+1(438)998-1746"
 };
 
 const education = {
@@ -24,26 +28,75 @@ const experience = {
   Description: []
 }
 
-const about = "Hey there welcome to the profiel of a striving Web Developer and designer. I do full stack development in Web Technologies";
+const projects = {
+  TRIVIA: {
+    img: "",
+    desc: "TRIVIA was developed by me as my final project for the course of Advanced Object Oriented Programming. This project helped me to learn the concept of classes and objects very well."
+  }
+}
 
-$('.info .innerSection span').innerText = about;
+
+$('.name').innerText = userInfo.name;
+$('.profession').innerText = userInfo.profession;
+
+
+var height = $('.projects').offsetWidth;
+
+$('.projects .rotator').style.width = height + "px";
+$('.projects .rotator').style.height = height + "px";
+
+// $('.education').onclick = () => {
+//   $('.rotator').style.transform = "rotate (" + rotate + ")deg";
+//   rotate += 90;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //setHeight
-var height1 = $('.intro').offsetHeight;
-var height2 = $('.about').offsetHeight;
-console.log(height1);
-console.log(height2);
-var height = height1 + height2;
+// var height1 = $('.intro').offsetHeight;
+// var height2 = $('.about').offsetHeight;
+// console.log(height1);
+// console.log(height2);
+// var height = height1 + height2;
 
-$('.info').style.height = "calc(100vh - " + height + "px)";
-$('.info .innerSection').style.height = "calc(100vh - " + height + "px)";
-var link = "./functions/heightSettings.js"
+// $('.info').style.height = "calc(100vh - " + height + "px)";
+// $('.info .innerSection').style.height = "calc(100vh - " + height + "px)";
+// var link = "./functions/heightSettings.js"
 
-window.addEventListener('resize', () => {
-  $('.scriptHeight').src = "";
-  $('.scriptHeight').src = link;
-});
-
-
-
-
+// window.addEventListener('resize', () => {
+//   $('.scriptHeight').src = "";
+//   $('.scriptHeight').src = link;
+// });
