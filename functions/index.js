@@ -84,7 +84,7 @@ $('.changeProject').onclick = () => {
     $('.prjDesc span').innerText = projects[prjCount].desc;
     $('.projectLink').href = projects[prjCount].link
     $('.prj-container').classList.remove('gayab');
-  }, 300)
+  }, 500)
 
 }
 

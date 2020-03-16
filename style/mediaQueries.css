@@ -111,6 +111,9 @@
 
     .prjDesc {
         align-items: center;
+    }
 
+    .prj-container {
+        height: 480px;
     }
 }
