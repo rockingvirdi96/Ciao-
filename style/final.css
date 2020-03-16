@@ -132,3 +132,8 @@ a {
     color: white;
 
 }
+
+.gayab {
+    opacity: 0;
+    transition: all 200ms linear;
+}

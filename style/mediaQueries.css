@@ -64,6 +64,17 @@
     .actGrp2 {
         padding-right: 40px;
     }
+
+    .prj-container {
+        padding: 20px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .prjImg {
+        align-items: flex-start;
+    }
+
 }
 
 
@@ -76,5 +87,30 @@
         transition: all 200ms linear;
         color: rgb(0, 55, 71);
         font-size: 12px;
+    }
+
+    .prj-container {
+        padding: 20px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .prjImg {
+        align-items: center;
+    }
+
+
+    .prjDesc span {
+        text-align: center;
+    }
+
+    .info {
+        font-size: 15px;
+        padding: 30px 10px;
+    }
+
+    .prjDesc {
+        align-items: center;
+
     }
 }
