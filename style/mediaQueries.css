@@ -72,7 +72,24 @@
     }
 
     .prjImg {
-        align-items: flex-start;
+        align-items: center;
+    }
+
+    .prjDesc span {
+        text-align: center;
+    }
+
+    .info {
+        font-size: 15px;
+        padding: 30px 10px;
+    }
+
+    .prjDesc {
+        align-items: center;
+    }
+
+    .prj-container {
+        height: 480px;
     }
 
 }
@@ -115,5 +132,10 @@
 
     .prj-container {
         height: 480px;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
     }
 }

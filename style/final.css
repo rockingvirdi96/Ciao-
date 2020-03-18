@@ -120,7 +120,10 @@ a {
     margin-top: 5px;
     display: flex;
     align-items: center;
-    background: linear-gradient(45deg, rgb(27, 57, 65), rgb(0, 87, 114));
+    background: url(https://www.transparenttextures.com/patterns/asfalt-dark.png), linear-gradient(45deg, rgb(27, 57, 65), rgb(0, 87, 114));
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
 }
 
 .info {
@@ -131,9 +134,4 @@ a {
     font-family: 'Baloo Bhai 2', cursive;
     color: white;
 
-}
-
-.gayab {
-    opacity: 0;
-    transition: all 200ms linear;
 }
