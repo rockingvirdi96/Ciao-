@@ -18,19 +18,27 @@ const userInfo = {
 };
 
 const education = {
-  Course: ["Bachelors in Computer Science", "Information Technology Programmer Analyst"],
-  Institute: ["D.A.V College", "LaSalle College"],
-  Location: ["Jalandhar,India", "Montreal, Quebec"],
-  Duration: ["04/2014-04/2017", "01/2019 - 04/2020"]
+  Course: ["BACHELORS IN COMPUTER SCIENCE", "INFORMATION TECHNOLOGY PROGRAMMER ANALYST"],
+  Institute: ["Guru Nanak Dev University", "LaSalle College"],
+  Location: ["Amritsar,India", "Montreal, Quebec"],
+  Duration: ["2014 - 2017", "01/2019 - 04/2020"]
 };
 
 const experience = {
   status: ["Dispatcher", "Cook"],
-  Company: ["KS Transport"],
+  Company: ["KS Transport", "Carlos Poulet"],
   Location: ["Jalandhar,India", "Montreal,Quebec"],
-  Duration: ["04/2014-04/2017", "01/2019 - 04/2020"],
+  Duration: ["-- 2014 - 2017 --", "01/2019 - 04/2020"],
   Description: []
 }
+
+const skills = [
+  { name: 'HTML', percentage: '100' },
+  { name: 'CSS', percentage: '90' },
+  { name: 'JavaScript', percentage: '80' },
+  { name: 'Java', percentage: '70' },
+  { name: 'React.js', percentage: '65' }];
+
 
 const projects = [
   {
@@ -66,7 +74,7 @@ $('.name').innerText = userInfo.name;
 $('.profession').innerText = userInfo.profession;
 $('.about .info').innerText = userInfo.about;
 
-
+//Toggle Projects
 $('.changeProject').onclick = () => {
   prjCount = prjCount + 1;
   if (prjCount == projects.length) {
@@ -81,51 +89,77 @@ $('.changeProject').onclick = () => {
     $('.prj-container').classList.remove('gayab');
   }, 500)
 }
+var y = 0;
+//Add Skills
+skills.forEach(x => {
+  const skill = `<div class="skill">
+              <div class="level">
+                <div class="name">`+ x.name + `</div>
+                <div class="percentage">
+                  <div class="bar" style="width:`+ x.percentage + `%;transition: all 3000ms linear;"></div>
+                </div>
+              </div>
+            </div>`;
+  // if (y % 2 == 0) {
+  $('.skills .left').innerHTML += skill;
+  // }
+  // else {
+  //   $('.skills .right').innerHTML += skill;
+  // }
+  // y += 1;
+});
+
+//Initialize Education
+$('#duration').innerText = education.Duration[0];
+$('#course').innerText = education.Course[0];
+$('#institute').innerText = education.Institute[0];
+$('#location').innerText = education.Location[0];
 
 
+$('.rightArr').onclick = () => {
+  if ($('#duration').innerText == education.Duration[0]) {
+    $('.edu').classList.add('edu-animate');
+    setTimeout(() => {
+      $('.edu').classList.remove('edu-animate');
+      $('#duration').innerText = education.Duration[1];
+      $('#course').innerText = education.Course[1];
+      $('#institute').innerText = education.Institute[1];
+      $('#location').innerText = education.Location[1];
+    }, 500);
 
+  }
+  else {
+    $('.edu').classList.add('edu-animate');
+    setTimeout(() => {
+      $('.edu').classList.remove('edu-animate');
+      $('#duration').innerText = education.Duration[0];
+      $('#course').innerText = education.Course[0];
+      $('#institute').innerText = education.Institute[0];
+      $('#location').innerText = education.Location[0];
+    }, 500);
+  }
+}
 
+$('.leftArr').onclick = () => {
+  if ($('#duration').innerText == education.Duration[0]) {
+    $('.edu').classList.add('edu-animate-l-click');
+    setTimeout(() => {
+      $('.edu').classList.remove('edu-animate-l-click');
+      $('#duration').innerText = education.Duration[1];
+      $('#course').innerText = education.Course[1];
+      $('#institute').innerText = education.Institute[1];
+      $('#location').innerText = education.Location[1];
+    }, 500);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//setHeight
-// var height1 = $('.intro').offsetHeight;
-// var height2 = $('.about').offsetHeight;
-// console.log(height1);
-// console.log(height2);
-// var height = height1 + height2;
-
-// $('.info').style.height = "calc(100vh - " + height + "px)";
-// $('.info .innerSection').style.height = "calc(100vh - " + height + "px)";
-// var link = "./functions/heightSettings.js"
-
-// window.addEventListener('resize', () => {
-//   $('.scriptHeight').src = "";
-//   $('.scriptHeight').src = link;
-// });
+  }
+  else {
+    $('.edu').classList.add('edu-animate-l-click');
+    setTimeout(() => {
+      $('.edu').classList.remove('edu-animate-l-click');
+      $('#duration').innerText = education.Duration[0];
+      $('#course').innerText = education.Course[0];
+      $('#institute').innerText = education.Institute[0];
+      $('#location').innerText = education.Location[0];
+    }, 500);
+  }
+}

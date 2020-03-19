@@ -92,6 +92,10 @@
         height: 480px;
     }
 
+    .prjDesc button {
+        margin-left: 0px;
+    }
+
 }
 
 
