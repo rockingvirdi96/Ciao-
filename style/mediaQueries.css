@@ -99,6 +99,32 @@
 }
 
 
+@media only screen and (max-width:1345px) {
+    .activities {
+        flex-direction: column;
+    }
+
+    .activity {
+        margin: 0px 5px;
+        min-height: 150px;
+        min-width: 150px;
+    }
+
+    .actGrp1 {
+        padding-left: 40px;
+    }
+
+    .actGrp2 {
+        padding-right: 40px;
+    }
+
+    .info {
+        font-size: 15px;
+        padding: 30px 10px;
+    }
+
+}
+
 @media only screen and (max-width:700px) {
     .activities {
         flex-direction: column;

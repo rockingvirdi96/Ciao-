@@ -169,7 +169,7 @@
 }
 
 .prjImg .prjPic {
-  margin: auto;
+  margin: 0px auto;
   height: 180px;
   width: 180px;
   border-radius: 3px;
@@ -203,8 +203,9 @@
 }
 
 .prjDesc button {
-  padding: 1px 4px;
+  padding: 2px 8px;
   margin: 5px;
+  margin-left: 0px;
   outline: none;
   border: 1px solid white;
   font-family: 'Baloo Bhai 2', cursive;
