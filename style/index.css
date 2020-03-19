@@ -468,15 +468,10 @@
 
 .edu-animate {
   opacity: 0;
-  margin-right: 80px;
-  transition: all 200ms linear;
+  /* margin-right: 80px; */
+  transition: all 400ms linear;
 }
 
-.edu-animate-l-click {
-  opacity: 0;
-  margin-left: 80px;
-  transition: all 200ms linear;
-}
 
 
 #duration {

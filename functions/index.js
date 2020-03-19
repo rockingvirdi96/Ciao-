@@ -21,7 +21,7 @@ const education = {
   Course: ["BACHELORS IN COMPUTER SCIENCE", "INFORMATION TECHNOLOGY PROGRAMMER ANALYST"],
   Institute: ["Guru Nanak Dev University", "LaSalle College"],
   Location: ["Amritsar,India", "Montreal, Quebec"],
-  Duration: ["2014 - 2017", "01/2019 - 04/2020"]
+  Duration: ["2014 - 2017", "2019 - 2020 (CURRENT)"]
 };
 
 const experience = {
@@ -110,10 +110,10 @@ skills.forEach(x => {
 });
 
 //Initialize Education
-$('#duration').innerText = education.Duration[0];
-$('#course').innerText = education.Course[0];
-$('#institute').innerText = education.Institute[0];
-$('#location').innerText = education.Location[0];
+$('#duration').innerText = education.Duration[1];
+$('#course').innerText = education.Course[1];
+$('#institute').innerText = education.Institute[1];
+$('#location').innerText = education.Location[1];
 
 
 $('.rightArr').onclick = () => {
@@ -142,9 +142,9 @@ $('.rightArr').onclick = () => {
 
 $('.leftArr').onclick = () => {
   if ($('#duration').innerText == education.Duration[0]) {
-    $('.edu').classList.add('edu-animate-l-click');
+    $('.edu').classList.add('edu-animate');
     setTimeout(() => {
-      $('.edu').classList.remove('edu-animate-l-click');
+      $('.edu').classList.remove('edu-animate');
       $('#duration').innerText = education.Duration[1];
       $('#course').innerText = education.Course[1];
       $('#institute').innerText = education.Institute[1];
@@ -153,9 +153,9 @@ $('.leftArr').onclick = () => {
 
   }
   else {
-    $('.edu').classList.add('edu-animate-l-click');
+    $('.edu').classList.add('edu-animate');
     setTimeout(() => {
-      $('.edu').classList.remove('edu-animate-l-click');
+      $('.edu').classList.remove('edu-animate');
       $('#duration').innerText = education.Duration[0];
       $('#course').innerText = education.Course[0];
       $('#institute').innerText = education.Institute[0];
