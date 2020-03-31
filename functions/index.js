@@ -34,17 +34,25 @@ const experience = {
 
 const skills = [
   { name: 'HTML', percentage: '100' },
-  { name: 'CSS', percentage: '90' },
+  { name: 'CSS', percentage: '100' },
   { name: 'JavaScript', percentage: '80' },
   { name: 'Java', percentage: '70' },
-  { name: 'React.js', percentage: '65' }];
+  { name: 'PHP', percentage: '70' },
+  { name: 'React.js', percentage: '60' },
+  { name: 'Python', percentage: '60' },
+  { name: 'C#', percentage: '80' },
+  { name: 'C++', percentage: '80' },
+  { name: 'SQL', percentage: '82' },
+  { name: 'Firebase', percentage: '70' },
+  { name: 'Android', percentage: '70' }
+];
 
 
 const projects = [
   {
     name: "WHATSAPP-REACT",
     img: "./assets/whatsapp.png",
-    desc: "TRIVIA was developed by me as my final project for the course of Advanced Object Oriented Programming. This project helped me to learn the concept of classes and objects very well.",
+    desc: "WhatsApp-replica was built to learn and progress in learning the most popular js framework REACT and also integrate an application with most popular cloud database FIREBASE. This app shows the designed replica of the original WhatsApp.",
     link: "https://whatsapp-replica-2b8a7.firebaseapp.com/"
   },
   {
@@ -100,13 +108,13 @@ skills.forEach(x => {
                 </div>
               </div>
             </div>`;
-  // if (y % 2 == 0) {
-  $('.skills .left').innerHTML += skill;
-  // }
-  // else {
-  //   $('.skills .right').innerHTML += skill;
-  // }
-  // y += 1;
+  if (y % 2 == 0) {
+    $('.skills .left').innerHTML += skill;
+  }
+  else {
+    $('.skills .right').innerHTML += skill;
+  }
+  y += 1;
 });
 
 //Initialize Education

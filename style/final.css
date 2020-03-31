@@ -5,13 +5,6 @@
     text-align: center;
     color: rgba(0, 55, 71);
     font-weight: bold;
-    /* background: linear-gradient(to right,
-            rgb(2, 104, 172),
-            rgb(0, 47, 92),
-            rgb(1, 119, 197));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; */
 }
 
 .profession {
@@ -38,7 +31,7 @@
     padding: 3px 6px;
     border: 3px solid white;
     font-family: 'Baloo Bhai 2', cursive;
-    border-radius: 5px;
+    border-radius: 4px;
     background-color: transparent;
     color: white;
 }
@@ -51,11 +44,10 @@
 }
 
 .profile-pic {
-    height: 150px;
-    width: 150px;
-    box-shadow: 0px 0px 5px rgba(20, 17, 17, 0.4);
+    height: 125px;
+    width: 125px;
+    box-shadow: 0px 0px 15px 1px rgba(20, 17, 17, 0.3);
     border-radius: 50%;
-    box-shadow: 0px 0px 10px 1px rgba(20, 17, 17, 0.8);
 }
 
 a {
@@ -103,13 +95,13 @@ a {
     font-weight: bold;
     border-left: 0.1px solid white;
     margin-bottom: 2px;
-
 }
 
+
 .links li a:hover {
-    transition: all 200ms linear;
+    transition: all 100ms linear;
     color: rgb(0, 55, 71);
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .links li a:active {
