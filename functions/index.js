@@ -7,7 +7,6 @@ $ = e => {
 $$ = e => {
   return document.querySelectorAll(e);
 }
-alert("Welcome, but its still under progress. Thanks for the visit.");
 
 const userInfo = {
   name: "RUPINDER PAL SINGH",
