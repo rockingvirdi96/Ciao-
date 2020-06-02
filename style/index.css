@@ -71,17 +71,6 @@
   transition: all 100ms linear;
 }
 
-.activity1 {
-  transition: all 200ms linear;
-  box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.7);
-  transform: scale(1.1);
-  background-image: url(../assets/badminton.webp);
-  background-size: cover;
-  background-position: fixed;
-  font-weight: bold;
-  color: aqua;
-
-}
 
 #prgBar {
   margin: 20px auto;
@@ -89,11 +78,23 @@
   height: 8px;
 }
 
+.activity1 {
+  transition: all 200ms linear;
+  box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.7);
+  background-image: url(../assets/badminton.webp);
+  background-size: cover;
+  margin: 5px;
+  background-position: fixed;
+  font-weight: bold;
+  color: aqua;
+
+}
+
 .activity2 {
   transition: all 200ms linear;
   box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.7);
-  /* transform: scale(1.1); */
   background-image: url(../assets/travelling.jpg);
+  margin: 5px;
   background-size: cover;
   background-position: fixed;
   font-weight: bold;
@@ -101,9 +102,9 @@
 }
 
 .activity3 {
+  margin: 5px;
   transition: all 200ms linear;
   box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.7);
-  /* transform: scale(1.1); */
   background-image: url(../assets/designing.jpeg);
   background-size: cover;
   background-position: fixed;
@@ -113,8 +114,8 @@
 
 .activity4 {
   transition: all 200ms linear;
+  margin: 5px;
   box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.7);
-  transform: scale(1.1);
   background-image: url(../assets/cooking.jpg);
   background-size: cover;
   background-position: fixed;
@@ -125,7 +126,7 @@
 
 
 
-.activity:active {
+.activity:hover {
   transform: scale(1.1);
 }
 
@@ -330,7 +331,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  z-index: 2;
+  z-index: 0;
 }
 
 .bar {
