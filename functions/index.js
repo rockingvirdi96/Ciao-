@@ -24,27 +24,54 @@ const education = {
 };
 
 const experience = {
-  status: ["Dispatcher", "Cook"],
-  Company: ["KS Transport", "Carlos Poulet"],
-  Location: ["Jalandhar,India", "Montreal,Quebec"],
-  Duration: ["-- 2014 - 2017 --", "01/2019 - 04/2020"],
+  status: ["Dispatcher"],
+  Company: ["KS Transport"],
+  Location: ["Jalandhar,India"],
+  Duration: ["-- 2014 - 2017 --"],
   Description: []
 }
 
-const skills = [
-  { name: 'HTML', percentage: '100' },
-  { name: 'CSS', percentage: '100' },
-  { name: 'JavaScript', percentage: '80' },
-  { name: 'Java', percentage: '70' },
-  { name: 'PHP', percentage: '70' },
-  { name: 'React.js', percentage: '60' },
-  { name: 'Python', percentage: '60' },
-  { name: 'C#', percentage: '80' },
-  { name: 'C++', percentage: '80' },
-  { name: 'SQL', percentage: '82' },
-  { name: 'Firebase', percentage: '70' },
-  { name: 'Android', percentage: '70' }
-];
+const skills = {
+  CODING: [
+    { name: 'Android', percentage: '65' },
+    { name: 'Java', percentage: '75' },
+    { name: 'C++', percentage: '75' },
+    { name: 'Python', percentage: '60' },
+    { name: 'JavaScript', percentage: '84' },
+    { name: 'React.js', percentage: '84' },
+    { name: 'Vue.js', percentage: '84' },
+  ],
+  DESIGN: [
+    { name: 'HTML', percentage: '95' },
+    { name: 'CSS', percentage: '90' },
+    { name: 'SASS', percentage: '75' },
+    { name: 'SASS', percentage: '75' },
+
+  ],
+  BACKEND: [
+    { name: 'Firebase', percentage: '70' },
+    { name: 'MongoDB', percentage: '80' },
+    { name: 'Express.js', percentage: '75' },
+    { name: 'Node.js', percentage: '85' },
+    { name: 'SQL', percentage: '82' },
+  ],
+  OTHERTECHS: [
+    { name: 'GITHUB', percentage: '90' },
+    { name: 'GIT', percentage: '90' },
+    { name: 'ADOBE PHOTOSHOP', percentage: '75' },
+    { name: 'ADOBE ILLUSTRATOR', percentage: '70' },
+
+  ]
+
+}
+
+// const skills = [
+//   { name: 'HTML', percentage: '100' },
+//   { name: 'JavaScript', percentage: '80' },
+//   { name: 'PHP', percentage: '70' },
+//   { name: 'React.js', percentage: '60' },
+//   { name: 'C#', percentage: '80' },
+// ];
 
 
 const projects = [
@@ -67,6 +94,19 @@ const projects = [
     desc: "This website was developed by me as my final project for the course of Web Development. This was my first full project made in JS.",
     link: "https://rupindervirdi96.github.io/My-Website/login.html"
 
+  },
+  {
+    name: "TRIVIA",
+    img: "./assets/trivia.png",
+    desc: "TRIVIA was developed by me as my final project for the course of Advanced Object Oriented Programming. This project helped me to learn the concept of classes and objects very well.",
+    link: "https://rupindervirdi96.github.io/TRIVIA-GAME/FinalProject"
+
+  },
+  {
+    name: "FACEBOOK-CLONE",
+    img: "./assets/fb.png",
+    desc: "Facebook-clone is currently being developed as a final project for my course. I am trying to build a website similar to facebook providing some important features as facebook. The design is also being developed to make it look like an HQ clone.",
+    link: "https://github.com/rupindervirdi96/facebook-clone"
   }
 ];
 
@@ -98,23 +138,34 @@ $('.changeProject').onclick = () => {
 }
 var y = 0;
 //Add Skills
-skills.forEach(x => {
-  const skill = `<div class="skill">
-              <div class="level">
-                <div class="name">`+ x.name + `</div>
-                <div class="percentage">
-                  <div class="bar" style="width:`+ x.percentage + `%;transition: all 3000ms linear;"></div>
-                </div>
-              </div>
-            </div>`;
-  if (y % 2 == 0) {
-    $('.skills .left').innerHTML += skill;
-  }
-  else {
-    $('.skills .right').innerHTML += skill;
-  }
-  y += 1;
-});
+const createSkill = (skill) => {
+
+  const Skill = `<div class="skill">
+  <div class="level">
+    <div class="name">`+ skill.name + `</div>
+    <div class="percentage">
+      <div class="bar" style="width:`+ skill.percentage + `%; position:relative">
+      <div class="buttonBar"></div>
+      </div>
+    </div>
+  </div>
+</div>`;
+  return Skill;
+}
+// skills.forEach(x => {
+skills.DESIGN.forEach((skill) => {
+  $('.skills .design').innerHTML += createSkill(skill)
+})
+skills.CODING.forEach((skill) => {
+  $('.skills .coding').innerHTML += createSkill(skill)
+})
+skills.BACKEND.forEach((skill) => {
+  $('.skills .backend').innerHTML += createSkill(skill)
+})
+skills.OTHERTECHS.forEach((skill) => {
+  $('.skills .personal').innerHTML += createSkill(skill)
+})
+
 
 //Initialize Education
 $('#duration').innerText = education.Duration[1];

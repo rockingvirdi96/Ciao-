@@ -58,6 +58,7 @@ a {
 .intro {
     display: flex;
     flex-direction: column;
+
 }
 
 .intro .innerSection {
@@ -109,13 +110,14 @@ a {
 }
 
 .about {
-    margin-top: 5px;
+    margin-top: 10px;
     display: flex;
     align-items: center;
     background: url(https://www.transparenttextures.com/patterns/asfalt-dark.png), linear-gradient(45deg, rgb(27, 57, 65), rgb(0, 87, 114));
     background-size: cover;
     background-position: center;
     background-blend-mode: soft-light;
+
 }
 
 .info {
