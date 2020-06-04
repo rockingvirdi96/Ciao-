@@ -36,6 +36,7 @@
   font-family: 'Baloo Bhai 2';
   letter-spacing: 2px;
   font-size: 30px;
+  font-weight: bold;
   padding: 0px 0px 10px 0px;
   text-align: center;
 }
@@ -71,6 +72,11 @@
   transition: all 100ms linear;
 }
 
+.activity span {
+  background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(255, 255, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 #prgBar {
   margin: 20px auto;
@@ -80,7 +86,7 @@
 
 .activity1 {
   transition: all 200ms linear;
-  box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
   background-image: url(../assets/badminton.webp);
   background-size: cover;
   margin: 5px;
@@ -92,7 +98,7 @@
 
 .activity2 {
   transition: all 200ms linear;
-  box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
   background-image: url(../assets/travelling.jpg);
   margin: 5px;
   background-size: cover;
@@ -104,7 +110,7 @@
 .activity3 {
   margin: 5px;
   transition: all 200ms linear;
-  box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
   background-image: url(../assets/designing.jpeg);
   background-size: cover;
   background-position: fixed;
@@ -115,7 +121,7 @@
 .activity4 {
   transition: all 200ms linear;
   margin: 5px;
-  box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
   background-image: url(../assets/cooking.jpg);
   background-size: cover;
   background-position: fixed;
@@ -148,10 +154,10 @@
   font-family: 'Baloo Bhai 2';
   letter-spacing: 2px;
   font-size: 30px;
+  font-weight: bold;
   padding: 0px 0px 10px 0px;
   text-align: center;
-  color: whitesmoke;
-  font-weight: normal;
+  color: rgb(255, 255, 255);
 }
 
 .prj-container {
@@ -269,10 +275,11 @@
   font-family: 'Baloo Bhai 2';
   letter-spacing: 2px;
   font-size: 30px;
+  font-weight: bolder;
   padding: 10px 0px 10px 0px;
   text-align: center;
   color: whitesmoke;
-  font-weight: normal;
+  font-weight: 600;
 
 
 }
@@ -284,7 +291,7 @@
 
 .skill h3 {
   font-family: 'Roboto Mono';
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   color: #fff;
   margin: 0px 0px 20px 0px;
   text-align: center;
@@ -297,8 +304,9 @@
 
 .skill .name {
   color: white;
-  font-weight: normal;
-  font-size: 16px;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: left;
 }
 
 .level {
@@ -307,7 +315,7 @@
   margin: auto;
   /* border: 2px solid black; */
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   flex-direction: column;
 }
 
@@ -496,19 +504,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .leftArr,
 .rightArr {
-  width: 20px;
-  background-color: rgb(1, 49, 91);
-  border-radius: 85px 0px 0px 85px;
-  height: 100%;
-  height: 100px;
+  width: 80px;
+  /* background-color: rgb(1, 49, 91); */
+  /* border-radius: 85px 0px 0px 85px; */
+  height: 60%;
+  /* height: 80px; */
+  opacity: 0.7;
+  /* border-radius: 0 25px 25px 0px; */
+  transform: translateX(-20%);
+  background-position: center;
+  /* box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5); */
 }
 
-.leftArr {
-  border-radius: 0px 85px 85px 0px;
+.rightArr {
+  transform: translateX(20%) rotate(180deg);
+
 }
 
 .edu {
@@ -533,7 +548,7 @@
 
 #duration {
   font-size: 16px;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   font-family: "Roboto Mono";
   margin-bottom: 10px;
   text-align: center;

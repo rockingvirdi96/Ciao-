@@ -1,5 +1,9 @@
 @media only screen and (max-width:800px) {
 
+    .education {
+        height: auto;
+    }
+
     .section {
         width: 100%;
     }

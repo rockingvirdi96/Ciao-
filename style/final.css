@@ -32,6 +32,8 @@
     border: 3px solid white;
     font-family: 'Baloo Bhai 2', cursive;
     border-radius: 4px;
+    font-weight: bolder;
+    font-size: 14px;
     background-color: transparent;
     color: white;
 }
@@ -83,9 +85,6 @@ a {
     font-weight: bold;
 }
 
-.links li:nth-child(1) {
-    border-left: none;
-}
 
 .links li {
     flex: 1;
@@ -94,18 +93,19 @@ a {
     padding: 10px 0px;
     font-size: 14px;
     font-weight: bold;
-    border-left: 0.1px solid white;
     margin-bottom: 2px;
+    color: white;
+    transition: all 100ms linear;
 }
 
 
-.links li a:hover {
+.links li:hover {
     transition: all 100ms linear;
     color: rgb(0, 55, 71);
-    font-size: 20px;
+    transform: scale(1.3);
 }
 
-.links li a:active {
+.links li:active {
     color: white;
 }
 

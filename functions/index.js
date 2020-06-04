@@ -10,7 +10,7 @@ $$ = e => {
 
 const userInfo = {
   name: "RUPINDER PAL SINGH",
-  profession: "FULL STACK DEVELOPER",
+  profession: "FULL STACK WEB DEVELOPER",
   address: "rupindervirdi96@gmail.com",
   phone: "+1(438)998-1746",
   about: "Hello from a striving full stack developer with keen interest in programming and designing. Currently i am looking for an internship which could also(^_^ hopefully) evolve into a full time Job. Up until now i have been making projects for myself and my education as listed below and on Github."
@@ -33,24 +33,25 @@ const experience = {
 
 const skills = {
   CODING: [
-    { name: 'Android', percentage: '65' },
-    { name: 'Java', percentage: '75' },
+    { name: 'REACT.js', percentage: '80' },
+    { name: 'VUE.js', percentage: '70' },
+    { name: 'VANILLA.js', percentage: '84' },
+    { name: 'ANDROID', percentage: '65' },
+    { name: 'JAVA', percentage: '80' },
     { name: 'C++', percentage: '75' },
-    { name: 'Python', percentage: '60' },
-    { name: 'JavaScript', percentage: '84' },
-    { name: 'React.js', percentage: '84' },
-    { name: 'Vue.js', percentage: '84' },
+    { name: 'PYTHON', percentage: '60' },
   ],
   DESIGN: [
     { name: 'HTML', percentage: '95' },
     { name: 'CSS', percentage: '90' },
     { name: 'SASS', percentage: '75' },
-    { name: 'SASS', percentage: '75' },
+    { name: 'ADOBE PHOTOSHOP', percentage: '75' },
+    { name: 'FIGMA', percentage: '72' },
 
   ],
   BACKEND: [
-    { name: 'Firebase', percentage: '70' },
-    { name: 'MongoDB', percentage: '80' },
+    { name: 'FIREBASE', percentage: '70' },
+    { name: 'MONGO DB', percentage: '80' },
     { name: 'Express.js', percentage: '75' },
     { name: 'Node.js', percentage: '85' },
     { name: 'SQL', percentage: '82' },
@@ -58,7 +59,6 @@ const skills = {
   OTHERTECHS: [
     { name: 'GITHUB', percentage: '90' },
     { name: 'GIT', percentage: '90' },
-    { name: 'ADOBE PHOTOSHOP', percentage: '75' },
     { name: 'ADOBE ILLUSTRATOR', percentage: '70' },
 
   ]
