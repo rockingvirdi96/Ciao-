@@ -46,6 +46,7 @@ const skills = {
     { name: 'HTML', percentage: '95' },
     { name: 'CSS', percentage: '90' },
     { name: 'SASS', percentage: '75' },
+    { name: 'BOOTSTRAP', percentage: '65' },
     { name: 'ADOBE PHOTOSHOP', percentage: '75' },
     { name: 'FIGMA', percentage: '72' },
 
@@ -58,9 +59,12 @@ const skills = {
     { name: 'SQL', percentage: '82' },
   ],
   OTHERTECHS: [
-    { name: 'GITHUB', percentage: '90' },
-    { name: 'GIT', percentage: '90' },
-    { name: 'GIT', percentage: '90' },
+    { name: 'GITHUB', percentage: '85' },
+    { name: 'GIT', percentage: '82' },
+    { name: 'MS EXCEL', percentage: '85' },
+    { name: 'MS POWERPOINT', percentage: '92' },
+    { name: 'MS WORD', percentage: '95' },
+
 
 
   ]
