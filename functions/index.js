@@ -16,6 +16,7 @@ const userInfo = {
   about: "Hello from a striving full stack developer with keen interest in programming and designing. Currently i am looking for an internship which could also(^_^ hopefully) evolve into a full time Job. Up until now i have been making projects for myself and my education as listed below and on Github."
 };
 
+
 const education = {
   Course: ["BACHELORS IN COMPUTER SCIENCE", "INFORMATION TECHNOLOGY PROGRAMMER ANALYST"],
   Institute: ["Guru Nanak Dev University", "LaSalle College"],
@@ -33,9 +34,9 @@ const experience = {
 
 const skills = {
   CODING: [
-    { name: 'REACT.js', percentage: '80' },
-    { name: 'VUE.js', percentage: '70' },
-    { name: 'VANILLA.js', percentage: '84' },
+    { name: 'REACT.js', percentage: '75' },
+    { name: 'VUE.js', percentage: '68' },
+    { name: 'VANILLA.js', percentage: '85' },
     { name: 'ANDROID', percentage: '65' },
     { name: 'JAVA', percentage: '80' },
     { name: 'C++', percentage: '75' },
@@ -52,26 +53,19 @@ const skills = {
   BACKEND: [
     { name: 'FIREBASE', percentage: '70' },
     { name: 'MONGO DB', percentage: '80' },
-    { name: 'Express.js', percentage: '75' },
-    { name: 'Node.js', percentage: '85' },
+    { name: 'EXPRESS.js', percentage: '75' },
+    { name: 'NODE.js', percentage: '85' },
     { name: 'SQL', percentage: '82' },
   ],
   OTHERTECHS: [
     { name: 'GITHUB', percentage: '90' },
     { name: 'GIT', percentage: '90' },
-    { name: 'ADOBE ILLUSTRATOR', percentage: '70' },
+    { name: 'GIT', percentage: '90' },
+
 
   ]
 
 }
-
-// const skills = [
-//   { name: 'HTML', percentage: '100' },
-//   { name: 'JavaScript', percentage: '80' },
-//   { name: 'PHP', percentage: '70' },
-//   { name: 'React.js', percentage: '60' },
-//   { name: 'C#', percentage: '80' },
-// ];
 
 
 const projects = [
@@ -137,6 +131,7 @@ $('.changeProject').onclick = () => {
   }, 500)
 }
 var y = 0;
+
 //Add Skills
 const createSkill = (skill) => {
 
@@ -221,3 +216,5 @@ $('.leftArr').onclick = () => {
     }, 500);
   }
 }
+
+$('.contact h4').innerHTML = `${userInfo.address} | ${userInfo.phone}`
