@@ -72,40 +72,41 @@ const skills = {
 }
 
 
-const projects = [
-  {
-    name: "WHATSAPP-REACT",
-    img: "./assets/whatsapp.png",
-    desc: "WhatsApp-replica was built to learn and progress in learning the most popular js framework REACT and also integrate an application with most popular cloud database FIREBASE. This app shows the designed replica of the original WhatsApp.",
-    link: "https://whatsapp-replica-2b8a7.firebaseapp.com/"
-  },
-  {
-    name: "MUSEUM",
-    img: "./assets/museum.png",
-    desc: "Museum is a music player made with android studio as a course project. Used Figma for design and java for coding. This app is being developed as a part of my course Android Development.",
-    link: "https://github.com/rupindervirdi96/museum"
+const projects = [{
+  name: "FACEBOOK-CLONE",
+  img: "./assets/facebook-clone.png",
+  desc: "Facebook-clone is a website similar to facebook providing some important features as facebook. This app is built by me as my final project for college. This app has similar design to facebook and some of the features are same too.",
+  link: "https://github.com/rupindervirdi96/facebook-clone"
+},
+{
+  name: "WHATSAPP-REACT",
+  img: "./assets/whatsapp.png",
+  desc: "WhatsApp-replica was built to learn and progress in learning the most popular js framework REACT and also integrate an application with most popular cloud database FIREBASE. This app shows the designed replica of the original WhatsApp.",
+  link: "https://whatsapp-replica-2b8a7.firebaseapp.com/"
+},
+{
+  name: "MUSEUM",
+  img: "./assets/museum.png",
+  desc: "Museum is a music player made with android studio as a course project. Used Figma for design and java for coding. This app is being developed as a part of my course Android Development.",
+  link: "https://github.com/rupindervirdi96/museum"
 
-  },
-  {
-    name: "E-COMMERCE",
-    img: "./assets/e-commerce.png",
-    desc: "This website was developed by me as my final project for the course of Web Development. This was my first full project made in JS.",
-    link: "https://rupindervirdi96.github.io/My-Website/login.html"
+},
 
-  },
-  {
-    name: "TRIVIA",
-    img: "./assets/trivia.png",
-    desc: "TRIVIA was developed by me as my final project for the course of Advanced Object Oriented Programming. This project helped me to learn the concept of classes and objects very well.",
-    link: "https://rupindervirdi96.github.io/TRIVIA-GAME/FinalProject"
+{
+  name: "TRIVIA",
+  img: "./assets/trivia.png",
+  desc: "TRIVIA was developed by me as my final project for the course of Advanced Object Oriented Programming. This project helped me to learn the concept of classes and objects very well.",
+  link: "https://rupindervirdi96.github.io/TRIVIA-GAME/FinalProject"
 
-  },
-  {
-    name: "FACEBOOK-CLONE",
-    img: "./assets/fb.png",
-    desc: "Facebook-clone is currently being developed as a final project for my course. I am trying to build a website similar to facebook providing some important features as facebook. The design is also being developed to make it look like an HQ clone.",
-    link: "https://github.com/rupindervirdi96/facebook-clone"
-  }
+},
+{
+  name: "E-COMMERCE",
+  img: "./assets/e-commerce.png",
+  desc: "This website was developed by me as my final project for the course of Web Development.",
+  link: "https://rupindervirdi96.github.io/My-Website/login.html"
+
+},
+
 ];
 
 //Initialize Projects

@@ -73,11 +73,12 @@
 }
 
 .activity span {
-  font-size: 20px;
-  background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(233, 233, 233));
-  text-shadow: 0px 0px 1px rgb(0, 140, 255);
+  font-size: 22px;
+  /* color: -webkit-linear-gradient(rgb(0, 0, 0), rgb(233, 233, 233)); */
+  background: -webkit-linear-gradient(rgb(235, 235, 235), rgb(0, 89, 255));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
 }
 
 #prgBar {
@@ -91,10 +92,9 @@
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
   background-image: url(../assets/badminton.webp);
   background-size: cover;
-  margin: 5px;
+  /* margin: 5px; */
   background-position: fixed;
-  font-weight: bold;
-  color: aqua;
+  font-weight: bolder;
 
 }
 
@@ -102,33 +102,30 @@
   transition: all 200ms linear;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
   background-image: url(../assets/travelling.jpg);
-  margin: 5px;
+  /* margin: 5px; */
   background-size: cover;
   background-position: fixed;
-  font-weight: bold;
-  color: aqua;
+  font-weight: bolder;
 }
 
 .activity3 {
-  margin: 5px;
+  /* margin: 5px; */
   transition: all 200ms linear;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
   background-image: url(../assets/designing.jpeg);
   background-size: cover;
   background-position: fixed;
-  font-weight: bold;
-  color: aqua;
+  font-weight: bolder;
 }
 
 .activity4 {
   transition: all 200ms linear;
-  margin: 5px;
+  /* margin: 5px; */
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
   background-image: url(../assets/cooking.jpg);
   background-size: cover;
   background-position: fixed;
-  font-weight: bold;
-  color: aqua;
+  font-weight: bolder;
 }
 
 
