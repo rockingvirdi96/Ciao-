@@ -76,7 +76,7 @@ const projects = [{
   name: "FACEBOOK-CLONE",
   img: "./assets/facebook-clone.png",
   desc: "Facebook-clone is a website similar to facebook providing some important features as facebook. This app is built by me as my final project for college. This app has similar design to facebook and some of the features are same too.",
-  link: "https://github.com/rupindervirdi96/facebook-clone"
+  link: "https://facebook-clone-v.herokuapp.com/"
 },
 {
   name: "WHATSAPP-REACT",

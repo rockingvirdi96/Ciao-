@@ -73,8 +73,8 @@
 }
 
 .activity span {
-  font-size: 22px;
-  /* color: -webkit-linear-gradient(rgb(0, 0, 0), rgb(233, 233, 233)); */
+    font-size: 22px;
+    /* color: -webkit-linear-gradient(rgb(0, 0, 0), rgb(233, 233, 233)); */
   background: -webkit-linear-gradient(rgb(235, 235, 235), rgb(0, 89, 255));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
