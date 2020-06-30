@@ -46,9 +46,9 @@ const skills = {
     { name: 'HTML', percentage: '95' },
     { name: 'CSS', percentage: '90' },
     { name: 'SASS', percentage: '75' },
+    { name: 'FIGMA', percentage: '80' },
     { name: 'BOOTSTRAP', percentage: '65' },
     { name: 'ADOBE PHOTOSHOP', percentage: '75' },
-    { name: 'FIGMA', percentage: '72' },
 
   ],
   BACKEND: [
