@@ -13,7 +13,7 @@ const userInfo = {
   profession: "FULL STACK WEB DEVELOPER",
   address: "rupindervirdi96@gmail.com",
   phone: "+1(438)998-1746",
-  about: "Hello from a striving full stack developer with keen interest in programming and designing. Currently i am looking for an internship which could also(^_^ hopefully) evolve into a full time Job. Up until now i have been making projects for myself and my education as listed below and on Github."
+  about: "Hello from a striving full stack web developer with keen interest in designing and creating powerful user experience websites. Currently i am looking a full time Job as a Full Stack Web Developer. Up until now i have been making projects for myself and my education as listed below and on Github."
 };
 
 
