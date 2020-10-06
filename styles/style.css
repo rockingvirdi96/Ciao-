@@ -1,0 +1,253 @@
+@keyframes img {
+    100% {
+        box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+    }
+}
+
+@keyframes fab {
+    100% {
+        transform: scale(1) rotate(0)
+    }
+}
+
+@keyframes cards {
+    100% {
+        transform: none;
+        visibility: visible;
+    }
+}
+
+@keyframes appbar-color {
+    100% {
+        transform: scale(10)
+    }
+}
+
+.primary {
+    background-color: #26C6DA;
+}
+
+.accent {
+    background-color: #E91E63;
+}
+
+.light {
+    background-color: #FAFAFA;
+}
+
+* {
+    cursor: default;
+    font-family: 'Product Sans', monospace, sans-serif;
+    line-height: 220%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    color: #FCE4EC;
+    background: #F06292;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: #FCE4EC;
+    background: #F06292;
+}
+
+.title svg {
+    fill: #3F51B5;
+    margin-right: 6px;
+}
+
+a {
+    color: #E91E63;
+    fill: #E91E63;
+    text-decoration: none;
+    transition: .1s ease-in-out;
+}
+
+a:hover, .contacts_btns a:hover {
+    fill: #F06292;
+    color: #F06292;
+}
+
+svg {
+    vertical-align: middle;
+    padding-bottom: 4px;
+}
+
+.vessel {
+    overflow: hidden;
+}
+
+.appbar {
+    position: fixed;
+    overflow: hidden;
+    background: #e0e0e0;
+    width: 100vw;
+    height: 25vh;
+    text-align: center;
+    top: 0;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0px rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.appbar-color {
+    height: 14vw;
+    width: 14vw;
+    min-height: 50px;
+    min-width: 50px;
+    margin-top: -7vw;
+    top: 50%;
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: appbar-color .6s forwards;
+}
+
+header, main {
+    max-width: 600px;
+    width: 100vw;
+    margin: auto;
+}
+
+.cards-vessel {
+    position: relative;
+    margin-top: 10vh;
+    transform: translateY(100%);
+    visibility: hidden;
+    animation: cards .3s ease-in-out forwards;
+    animation-delay: .3s;
+    will-change: transform;
+}
+
+.card {
+    width: 92%;
+    margin: 20px auto;
+    padding: 26px;
+    color: #212121;
+    background-color: #FFF;
+    border-radius: 2px;
+    overflow: auto;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro .photo {
+    height: 100px;
+    width: 100px;
+    background: #E91E63;
+    border: solid #FFF 6px;
+    border-radius: 50%;
+    animation: img .2s forwards;
+    animation-delay: .8s;
+    will-change: box-shadow;
+}
+
+.intro .name {
+    font-weight: normal;
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.info {
+    font-weight: normal;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.tab {
+    margin: 10px 0;
+}
+
+.title {
+    font-size: 16px;
+    color: #3f51b5;
+}
+
+.element {
+    margin: 5px 0;
+}
+
+.name {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+hr {
+    width: 100%;
+    background-color: #E0E0E0;
+    height: 1px;
+    border: 0;
+}
+
+.contact .content, .back_to_top .content {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.contacts_btns {
+    padding: 20px;
+    display: inline-block;
+    font-size: 14px;
+    text-align: left;
+    width: 128px;
+}
+
+.contacts_btns a {
+    fill: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.fab {
+    position: fixed;
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+    transform: scale(0) rotate(-45deg);
+    animation: fab .2s forwards;
+    animation-delay: 1.4s;
+    transition: all 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: all 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: box-shadow, background-color;
+}
+
+.fab:hover {
+    background: #EC407A;
+    box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 17px 2px rgba(0, 0, 0, 0.14), 0px 5px 22px 4px rgba(0, 0, 0, 0.12)
+}
+
+.fab svg {
+    fill: #fff;
+    padding: 0;
+}
+
+footer {
+    z-index: -1;
+    bottom: 0;
+    text-align: center;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 16px 0;
+}
+
+@media (min-width: 961px) {
+    .fab {
+        top: calc(25% - 30px);
+        right: calc((100% - 550px)/4 - 30px);
+    }
+}
+
+@media (max-width: 960px) {
+    .fab {
+        bottom: 1rem;
+        right: 1rem;
+    }
+}
