@@ -1,0 +1,189 @@
+@media only screen and (max-width:800px) {
+
+    .education {
+        height: auto;
+    }
+
+
+
+    .section {
+        width: 100%;
+    }
+
+    .innerSection {
+        width: 100%;
+    }
+
+    .buttons {
+        width: 100%;
+    }
+
+    .buttons div {
+        flex: 1;
+    }
+
+    .name {
+        font-size: 40px;
+    }
+
+    .profession {
+        font-size: 20px;
+    }
+
+    .links {
+        font-size: 10px;
+    }
+
+    .links li {
+        height: 30px;
+    }
+
+    #btnHireMe,
+    #getCv {
+        flex: 2;
+    }
+
+    .links li {
+        font-size: 10px;
+        /* font-weight: 500; */
+    }
+
+    .profile-pic {
+        height: 100px;
+        width: 100px;
+        box-shadow: 0px 5px 10px 2px rgba(80, 80, 80, 0.3);
+        margin: 20px 0px;
+        border: 5px solid white;
+        border-radius: 50%;
+
+    }
+
+    .activities {
+        flex-direction: column;
+    }
+
+    .activity {
+        margin: 0px 5px;
+        min-height: 150px;
+        min-width: 150px;
+    }
+
+    .actGrp1 {
+        padding-left: 40px;
+    }
+
+    .actGrp2 {
+        padding-right: 40px;
+    }
+
+    .prj-container {
+        padding: 20px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .prjImg {
+        align-items: center;
+    }
+
+    .prjDesc span {
+        text-align: center;
+    }
+
+    .info {
+        font-size: 15px;
+        padding: 30px 10px;
+    }
+
+    .prjDesc {
+        align-items: center;
+    }
+
+    .prj-container {
+        height: 480px;
+    }
+
+    .prjDesc button {
+        margin-left: 0px;
+    }
+
+
+}
+
+@media only screen and (max-width:1200px) {
+    .skills {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media only screen and (max-width:1345px) {
+    .activities {
+        flex-direction: column;
+    }
+
+    .activity {
+        margin: 0px 5px;
+        min-height: 150px;
+        min-width: 150px;
+    }
+
+    .actGrp1 {
+        padding-left: 40px;
+    }
+
+    .actGrp2 {
+        padding-right: 40px;
+    }
+
+    .info {
+        font-size: 15px;
+        padding: 30px 10px;
+    }
+
+
+
+}
+
+@media only screen and (max-width:700px) {
+    .activities {
+        flex-direction: column;
+    }
+
+    .links li a:hover {
+        transition: all 200ms linear;
+        color: rgb(0, 55, 71);
+        font-size: 12px;
+    }
+
+    .prj-container {
+        padding: 20px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .prjImg {
+        align-items: center;
+    }
+
+
+    .prjDesc span {
+        text-align: center;
+    }
+
+    .info {
+        font-size: 15px;
+        padding: 30px 10px;
+    }
+
+    .prjDesc {
+        align-items: center;
+    }
+
+    .prj-container {
+        height: 480px;
+    }
+
+
+}

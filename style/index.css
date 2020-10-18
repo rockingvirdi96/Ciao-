@@ -1,0 +1,576 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: url(https://web.whatsapp.com/img/bg-chat-tile_9e8a2898faedb7db9bf5638405cf81ae.png), #222;
+  background-blend-mode: soft-light;
+}
+
+.section {
+  min-height: 200px;
+  width: 60%;
+  margin: auto;
+  background: url(https://web.whatsapp.com/img/bg-chat-tile_9e8a2898faedb7db9bf5638405cf81ae.png),
+    linear-gradient(0deg, rgb(54, 208, 255), rgb(187, 239, 255));
+  background-blend-mode: soft-light;
+  border-radius: 3px;
+}
+
+/*  /////////////////////////   */
+.hobbies {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 5px 40px 5px;
+}
+
+.hobbies h2 {
+  font-family: 'Baloo Bhai 2';
+  letter-spacing: 2px;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0px 0px 10px 0px;
+  text-align: center;
+}
+
+.activities {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.actGrp1,
+.actGrp2 {
+  display: flex;
+}
+
+.activity {
+  flex: 1;
+  min-height: 180px;
+  min-width: 180px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 50px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: 'Baloo Bhai 2';
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  transition: all 100ms linear;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.activity span {
+  font-size: 22px;
+  /* color: -webkit-linear-gradient(rgb(0, 0, 0), rgb(233, 233, 233)); */
+  background: -webkit-linear-gradient(rgb(235, 235, 235), rgb(0, 89, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+#prgBar {
+  margin: 20px auto;
+  width: 100%;
+  height: 8px;
+}
+
+.activity1 {
+  transition: all 200ms linear;
+  background-image: url(../assets/badminton.webp);
+  background-size: cover;
+  /* margin: 5px; */
+  background-position: center;
+  font-weight: bolder;
+
+}
+
+.activity2 {
+  transition: all 200ms linear;
+  background-image: url(../assets/travelling.jpg);
+  /* margin: 5px; */
+  background-size: cover;
+  background-position: center;
+  font-weight: bolder;
+}
+
+.activity3 {
+  /* margin: 5px; */
+  transition: all 200ms linear;
+  background-image: url(../assets/basketball.jpg);
+  background-size: cover;
+  background-position: center;
+  font-weight: bolder;
+}
+
+.activity4 {
+  transition: all 200ms linear;
+  /* margin: 5px; */
+  background-image: url(../assets/cooking.jpg);
+  background-size: cover;
+  background-position: fixed;
+  font-weight: bolder;
+}
+
+
+
+
+.activity:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.7);
+}
+
+/*  /////////////////////////   */
+
+.projects {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  background: url(https://www.transparenttextures.com/patterns/asfalt-dark.png), linear-gradient(45deg, rgb(27, 57, 65), rgb(0, 87, 114));
+  background-size: cover;
+  /* height: auto; */
+  background-position: center;
+  background-blend-mode: soft-light;
+  padding: 30px 0px 30px 0px;
+
+}
+
+.projects h2 {
+  font-family: 'Baloo Bhai 2';
+  letter-spacing: 2px;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0px 0px 10px 0px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.prj-container {
+  width: 100%;
+  height: 200px;
+  padding: 0px 20px;
+  margin: 10px 0px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  transition: all 200ms ease-in-out;
+}
+
+.prjImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+}
+
+.prjImg .prjName {
+  font-family: "Baloo Bhai 2";
+  color: white;
+  font-size: 20px;
+}
+
+.prjImg .prjPic {
+  margin: 0px auto;
+  height: 150px;
+  width: 150px;
+  border-radius: 3px;
+  background-size: cover;
+  background-position: center;
+}
+
+.prjPic {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: 'Baloo Bhai 2', cursive;
+  color: rgb(0, 20, 85);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.prjDesc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 20px 40px 20px;
+}
+
+.prjDesc span {
+  flex: 3;
+  font-family: 'Baloo Bhai 2';
+  color: whitesmoke;
+}
+
+.prjDesc button {
+  padding: 2px 8px;
+  margin: 5px;
+  margin-left: 0px;
+  outline: none;
+  border: 1px solid white;
+  font-family: 'Baloo Bhai 2', cursive;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+}
+
+.gayab {
+  opacity: 0;
+  transition: all 200ms linear;
+}
+
+.skillss {
+  margin-top: 10px;
+  background: url(https://www.transparenttextures.com/patterns/asfalt-dark.png), linear-gradient(45deg, rgb(27, 57, 65), rgb(0, 87, 114));
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: soft-light;
+  padding: 20px;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 60px;
+
+
+}
+
+.skills .left,
+.skills .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1;
+  height: auto;
+}
+
+.skills .left>*,
+.skills .right>* {
+  /* border: 1px solid white; */
+  max-height: 280px;
+  /* min-height: ; */
+  width: 300px;
+  background-color: #222;
+  margin: 10px;
+  padding: 0px 0px 10px 0px;
+  overflow-y: scroll;
+}
+
+.skillss h2 {
+  font-family: 'Baloo Bhai 2';
+  letter-spacing: 2px;
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+  color: whitesmoke;
+  font-weight: 600;
+
+
+}
+
+.skill {
+  position: relative;
+  background-color: #222;
+}
+
+.skill h3 {
+  font-family: 'Roboto Mono';
+  letter-spacing: 3px;
+  color: #fff;
+  margin: 0px 0px 20px 0px;
+  text-align: center;
+  padding: 5px 0px;
+  position: sticky;
+  background-color: #000;
+  top: 0%;
+  z-index: 1;
+}
+
+.skill .name {
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: left;
+}
+
+.level {
+  /* flex: 1; */
+  width: 90%;
+  margin: auto;
+  /* border: 2px solid black; */
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.percentage {
+  border: 1px solid black;
+  /* border-radius: 2px; */
+  width: 90%;
+  display: flex;
+  overflow: visible;
+  align-content: center;
+  background-color: rgb(144, 144, 144);
+  margin-bottom: 18px;
+}
+
+.percentage .bar .buttonBar {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  left: 100%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.bar {
+  /* border-radius: 0px; */
+  height: 5px;
+  width: 0%;
+  background-color: aqua;
+  position: relative;
+
+}
+
+
+/*Contact me*/
+
+.contact {
+  text-align: center;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.contact h2 {
+  font-family: 'Baloo Bhai 2';
+  letter-spacing: 2px;
+  font-size: 30px;
+  padding: 0px 0px 10px 0px;
+  text-align: center;
+  color: rgb(0, 21, 66);
+  font-weight: bold;
+}
+
+.contact h4 {
+  font-family: 'Architects Daughter', cursive;
+  letter-spacing: 2px;
+  font-size: 15px;
+  padding: 0px 0px 10px 0px;
+  text-align: center;
+  color: rgb(0, 21, 66);
+  font-weight: normal;
+  font-weight: bold;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact form input {
+  padding: 5px;
+  width: 250px;
+  margin: 5px auto;
+  font-size: 18px;
+  text-align: center;
+  font-family: "Baloo Bhai 2";
+  border-radius: 5px;
+  border: 2px solid rgba(0, 68, 255, 0.8);
+}
+
+.contact form textarea {
+  padding: 5px;
+  font-size: 18px;
+  width: 250px;
+  height: max-content;
+  margin: 5px auto;
+  text-align: center;
+  font-family: "Baloo Bhai 2";
+  border-radius: 5px;
+  border: 2px solid rgba(0, 68, 255, 0.8);
+}
+
+
+/* ::-webkit-scrollbar-track {
+  
+}
+
+*/
+
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: rgb(139, 139, 139);
+
+}
+
+::-webkit-scrollbar-button {
+  width: 9px;
+  height: 0px;
+  margin: auto;
+  background-color: rgb(80, 80, 80);
+}
+
+::-webkit-scrollbar-thumb {
+
+  width: 10px;
+  background-color: rgb(97, 97, 97);
+}
+
+#github {
+  background-image: url(../assets/icons8-github-50.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#codepen {
+  background-image: url(../assets/icons8-codepen-50.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#dribbble {
+  background-size: cover;
+  background-position: center;
+  background-image: url(../assets/icons8-dribbble-old-logo-50.png);
+}
+
+#github:hover,
+#codepen:hover,
+#dribbble:hover {
+  transform: scale(1.5);
+  transition: all 100ms ease-in;
+}
+
+.social-links {
+  text-align: center;
+  padding: 20px 20px 0px 20px;
+}
+
+.social-links li {
+  display: inline-block;
+  margin: 0px 20px;
+  height: 30px;
+  width: 30px;
+  transition: all 100ms ease-in;
+  border-radius: 50%;
+}
+
+.footer {
+  margin-bottom: 0px;
+}
+
+.copyright {
+  font-size: 14px;
+  color: whitesmoke;
+  padding: 5px;
+  font-family: "Baloo Bhai 2";
+  text-align: center;
+}
+
+.cntct-form input[type="submit"] {
+  background-color: rgb(0, 87, 114);
+  color: whitesmoke;
+  border: none;
+}
+
+
+
+
+/* EDUCATION */
+
+.education {
+  margin-top: 10px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.leftArr,
+.rightArr {
+  width: 80px;
+  /* background-color: rgb(1, 49, 91); */
+  /* border-radius: 85px 0px 0px 85px; */
+  height: 60%;
+  /* height: 80px; */
+  opacity: 0.7;
+  /* border-radius: 0 25px 25px 0px; */
+  transform: translateX(-20%);
+  background-position: center;
+  /* box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5); */
+}
+
+.rightArr {
+  transform: translateX(20%) rotate(180deg);
+
+}
+
+.edu {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  padding-top: 0px;
+  padding-bottom: 40px;
+  transition: all 300ms linear;
+}
+
+.edu-animate {
+  opacity: 0;
+  /* margin-right: 80px; */
+  transition: all 400ms linear;
+}
+
+
+
+#duration {
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-family: "Roboto Mono";
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#course {
+  font-size: 25px;
+  font-family: "Roboto Mono";
+  text-align: center;
+
+}
+
+#institute {
+
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 5px 0px;
+  font-family: "Roboto Mono";
+  text-align: center;
+}
+
+#location {
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-family: "Roboto Mono";
+  text-align: center;
+}
