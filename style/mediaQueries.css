@@ -2,9 +2,8 @@
 
     .education {
         height: auto;
+        padding: 0px 10px;
     }
-
-
 
     .section {
         width: 100%;
@@ -12,22 +11,14 @@
 
     .innerSection {
         width: 100%;
-    }
-
-    .buttons {
-        width: 100%;
-    }
-
-    .buttons div {
-        flex: 1;
-    }
+    }   
 
     .name {
-        font-size: 40px;
+        font-size: 25px;
     }
 
     .profession {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .links {
@@ -36,17 +27,11 @@
 
     .links li {
         height: 30px;
-    }
-
-    #btnHireMe,
-    #getCv {
-        flex: 2;
-    }
-
-    .links li {
         font-size: 10px;
-        /* font-weight: 500; */
     }
+
+   
+
 
     .profile-pic {
         height: 100px;

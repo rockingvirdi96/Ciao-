@@ -3,14 +3,14 @@
   margin: 0;
   box-sizing: border-box;
   user-select: none;
-
+  
 }
 
 .container {
   position: relative;
   width: 100%;
   height: auto;
-  background: url(https://web.whatsapp.com/img/bg-chat-tile_9e8a2898faedb7db9bf5638405cf81ae.png), #222;
+  background: url(https://web.whatsapp.com/img/bg-chat-tile_9e8a2898faedb7db9bf5638405cf81ae.png), rgba(255, 255, 255,0.9);
   background-blend-mode: soft-light;
 }
 
@@ -18,8 +18,7 @@
   min-height: 200px;
   width: 60%;
   margin: auto;
-  background: url(https://web.whatsapp.com/img/bg-chat-tile_9e8a2898faedb7db9bf5638405cf81ae.png),
-    linear-gradient(0deg, rgb(54, 208, 255), rgb(187, 239, 255));
+    background-color: transparent;
   background-blend-mode: soft-light;
   border-radius: 3px;
 }
@@ -33,7 +32,7 @@
 }
 
 .hobbies h2 {
-  font-family: 'Baloo Bhai 2';
+  font-family: 'Nunito Sans', sans-serif;;
   letter-spacing: 2px;
   font-size: 30px;
   font-weight: bold;
@@ -65,27 +64,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  font-family: 'Baloo Bhai 2';
+  font-family: 'Nunito Sans', sans-serif;;
   color: white;
   border: 1px solid white;
   border-radius: 4px;
   transition: all 100ms linear;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
-}
-
-.activity span {
-  font-size: 22px;
-  /* color: -webkit-linear-gradient(rgb(0, 0, 0), rgb(233, 233, 233)); */
-  background: -webkit-linear-gradient(rgb(235, 235, 235), rgb(0, 89, 255));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-}
-
-#prgBar {
-  margin: 20px auto;
-  width: 100%;
-  height: 8px;
 }
 
 .activity1 {
@@ -139,25 +123,22 @@
   margin-top: 10px;
   display: flex;
   flex-direction: column;
-  background: url(https://www.transparenttextures.com/patterns/asfalt-dark.png), linear-gradient(45deg, rgb(27, 57, 65), rgb(0, 87, 114));
-  background-size: cover;
-  /* height: auto; */
-  background-position: center;
-  background-blend-mode: soft-light;
+  background-color: rgb(0, 117, 153);
   padding: 30px 0px 30px 0px;
-
-}
-
-.projects h2 {
-  font-family: 'Baloo Bhai 2';
-  letter-spacing: 2px;
-  font-size: 30px;
-  font-weight: bold;
-  padding: 0px 0px 10px 0px;
-  text-align: center;
-  color: rgb(255, 255, 255);
-}
-
+    
+    
+  }
+  
+  .projects h2 {
+    font-family: 'Nunito Sans', sans-serif;;
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0px 0px 10px 0px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+  
 .prj-container {
   width: 100%;
   height: 200px;
@@ -195,7 +176,7 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  font-family: 'Baloo Bhai 2', cursive;
+  font-family: 'Nunito Sans', sans-serif;
   color: rgb(0, 20, 85);
   font-weight: bold;
   font-size: 24px;
@@ -210,20 +191,26 @@
 
 .prjDesc span {
   flex: 3;
-  font-family: 'Baloo Bhai 2';
+  font-family: 'Nunito Sans', sans-serif;;
   color: whitesmoke;
 }
 
 .prjDesc button {
-  padding: 2px 8px;
+  padding: 4px 8px;
   margin: 5px;
   margin-left: 0px;
   outline: none;
   border: 1px solid white;
-  font-family: 'Baloo Bhai 2', cursive;
   border-radius: 5px;
   background-color: transparent;
+  font-family: 'Nunito Sans', sans-serif;
   color: white;
+}
+
+.prjDesc button a{
+  font-family: 'Nunito Sans', sans-serif;
+  color: white;
+
 }
 
 .gayab {
@@ -233,10 +220,7 @@
 
 .skillss {
   margin-top: 10px;
-  background: url(https://www.transparenttextures.com/patterns/asfalt-dark.png), linear-gradient(45deg, rgb(27, 57, 65), rgb(0, 87, 114));
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: soft-light;
+  background-color: rgb(0, 117, 153);
   padding: 20px;
 }
 
@@ -244,7 +228,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 20px 60px;
-
+  
 
 }
 
@@ -259,18 +243,17 @@
 
 .skills .left>*,
 .skills .right>* {
-  /* border: 1px solid white; */
   max-height: 280px;
-  /* min-height: ; */
   width: 300px;
-  background-color: #222;
+  background-color: transparent;
   margin: 10px;
   padding: 0px 0px 10px 0px;
   overflow-y: scroll;
+  box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.2);
 }
 
 .skillss h2 {
-  font-family: 'Baloo Bhai 2';
+  font-family: 'Nunito Sans', sans-serif;;
   letter-spacing: 2px;
   font-size: 30px;
   font-weight: bolder;
@@ -284,11 +267,11 @@
 
 .skill {
   position: relative;
-  background-color: #222;
+  background-color: transparent;
 }
 
 .skill h3 {
-  font-family: 'Roboto Mono';
+  font-family: 'Nunito Sans', sans-serif;;
   letter-spacing: 3px;
   color: #fff;
   margin: 0px 0px 20px 0px;
@@ -311,21 +294,19 @@
   /* flex: 1; */
   width: 90%;
   margin: auto;
-  /* border: 2px solid black; */
   display: flex;
-  /* align-items: center; */
   flex-direction: column;
 }
 
 .percentage {
-  border: 1px solid black;
   /* border-radius: 2px; */
   width: 90%;
   display: flex;
   overflow: visible;
   align-content: center;
-  background-color: rgb(144, 144, 144);
+  background-color: #fff;
   margin-bottom: 18px;
+  border-radius: 10px;
 }
 
 .percentage .bar .buttonBar {
@@ -341,12 +322,11 @@
 }
 
 .bar {
-  /* border-radius: 0px; */
   height: 5px;
   width: 0%;
-  background-color: aqua;
+  background-color: rgb(255, 145, 0);
   position: relative;
-
+  border-radius: 10px;
 }
 
 
@@ -359,7 +339,7 @@
 }
 
 .contact h2 {
-  font-family: 'Baloo Bhai 2';
+  font-family: 'Nunito Sans', sans-serif;
   letter-spacing: 2px;
   font-size: 30px;
   padding: 0px 0px 10px 0px;
@@ -370,6 +350,7 @@
 
 .contact h4 {
   font-family: 'Architects Daughter', cursive;
+  font-family: 'Nunito Sans', sans-serif;
   letter-spacing: 2px;
   font-size: 15px;
   padding: 0px 0px 10px 0px;
@@ -479,7 +460,7 @@
 
 .copyright {
   font-size: 14px;
-  color: whitesmoke;
+  color: rgb(0, 0, 0);
   padding: 5px;
   font-family: "Baloo Bhai 2";
   text-align: center;
@@ -497,6 +478,7 @@
 /* EDUCATION */
 
 .education {
+  position: relative;
   margin-top: 10px;
   height: 300px;
   display: flex;
@@ -507,21 +489,24 @@
 
 .leftArr,
 .rightArr {
-  width: 80px;
-  /* background-color: rgb(1, 49, 91); */
-  /* border-radius: 85px 0px 0px 85px; */
-  height: 60%;
-  /* height: 80px; */
-  opacity: 0.7;
-  /* border-radius: 0 25px 25px 0px; */
-  transform: translateX(-20%);
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-image: url(../assets/arrow.png);  
   background-position: center;
-  /* box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5); */
+  background-size: cover;
 }
 
-.rightArr {
-  transform: translateX(20%) rotate(180deg);
 
+.rightArr {
+  top: 50%;
+  left: 100%;
+  transform: translateX(-100%) rotate(180deg);
+}
+.leftArr {
+  top: 50%;
+  left: 0%;
+  /* transform: rotate(180deg); */
 }
 
 .edu {
@@ -535,6 +520,9 @@
   padding-bottom: 40px;
   transition: all 300ms linear;
 }
+.edu img{
+  margin-bottom: 30px;
+} 
 
 .edu-animate {
   opacity: 0;

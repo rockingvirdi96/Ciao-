@@ -13,15 +13,15 @@ const userInfo = {
   profession: "FULL STACK WEB DEVELOPER",
   address: "rupindervirdi96@gmail.com",
   phone: "+1(438)998-1746",
-  about: "Hello from a striving full stack web developer with keen interest in designing and creating powerful user experience websites. Currently i am looking a full time Job as a Full Stack Web Developer. Up until now i have been making projects for myself and my education as listed below and on Github."
+  about: "Hello from a striving full stack web developer with keen interest in designing and creating powerful user experience websites. Currently i am looking for a full time Job as a Full Stack Web Developer. Up until now i have been making projects for myself and my education as listed below and on Github."
 };
 
 
 const education = {
-  Course: ["BACHELORS IN COMPUTER SCIENCE", "INFORMATION TECHNOLOGY PROGRAMMER ANALYST"],
+  Course: ["BACHELORS IN COMPUTER SCIENCE", "ADVANCED DIPLOMA IT PROGRAMMER ANALYST"],
   Institute: ["Guru Nanak Dev University", "LaSalle College"],
   Location: ["Amritsar,India", "Montreal, Quebec"],
-  Duration: ["2014 - 2017", "2019 - 2020 (CURRENT)"]
+  Duration: ["2017", "2020"]
 };
 
 const experience = {
@@ -34,9 +34,8 @@ const experience = {
 
 const skills = {
   CODING: [
-    { name: 'REACT.js', percentage: '75' },
-    { name: 'VUE.js', percentage: '68' },
-    { name: 'VANILLA.js', percentage: '85' },
+    { name: 'REACT', percentage: '75' },
+    { name: 'VUE', percentage: '68' },
     { name: 'ANDROID', percentage: '65' },
     { name: 'JAVA', percentage: '80' },
     { name: 'C++', percentage: '75' },
@@ -45,22 +44,24 @@ const skills = {
   DESIGN: [
     { name: 'HTML', percentage: '95' },
     { name: 'CSS', percentage: '90' },
-    { name: 'SASS', percentage: '75' },
-    { name: 'FIGMA', percentage: '80' },
+    { name: 'SASS', percentage: '85' },
     { name: 'BOOTSTRAP', percentage: '65' },
+    { name: 'FIGMA', percentage: '80' },
     { name: 'ADOBE PHOTOSHOP', percentage: '75' },
+    { name: 'ADOBE XD', percentage: '75' },
 
   ],
   BACKEND: [
-    { name: 'FIREBASE', percentage: '70' },
-    { name: 'MONGO DB', percentage: '80' },
-    { name: 'EXPRESS.js', percentage: '75' },
-    { name: 'NODE.js', percentage: '85' },
+    { name: 'NODE', percentage: '85' },
+    { name: 'EXPRESS', percentage: '75' },
     { name: 'SQL', percentage: '82' },
+    { name: 'FIREBASE', percentage: '70' },
+    { name: 'MONGO-DB', percentage: '80' },
   ],
   OTHERTECHS: [
     { name: 'GITHUB', percentage: '85' },
     { name: 'GIT', percentage: '82' },
+    { name: 'HEROKU', percentage: '80' },
     { name: 'MS EXCEL', percentage: '85' },
     { name: 'MS POWERPOINT', percentage: '92' },
     { name: 'MS WORD', percentage: '95' },
@@ -100,10 +101,10 @@ const projects = [{
 
 },
 {
-  name: "E-COMMERCE",
-  img: "./assets/e-commerce.png",
+  name: "CALCULTOR REACT",
+  img: "./assets/calc.png",
   desc: "This website was developed by me as my final project for the course of Web Development.",
-  link: "https://rupindervirdi96.github.io/My-Website/login.html"
+  link: "https://rupindervirdi96.github.io/CalculatorReact/"
 
 },
 
