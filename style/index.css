@@ -224,6 +224,10 @@
   padding: 20px;
 }
 
+#skills h2{
+  color: white;
+}
+
 .skills {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -261,6 +265,7 @@
   padding: 10px 0px 10px 0px;
   text-align: center;
   font-weight: 600;
+  color: #fff
 
 
 }
