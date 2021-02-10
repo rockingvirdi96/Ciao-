@@ -74,9 +74,11 @@ a{
 .intro a {
     text-decoration: none;
     color:  rgb(0, 44, 85);
+    
 }
 
 .intro {
+    box-shadow: none;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -135,7 +137,6 @@ a{
     display: flex;
     align-items: center;
     background-color: rgb(0, 117, 153);
-    
 }
 
 .info {

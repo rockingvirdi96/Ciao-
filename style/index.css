@@ -16,6 +16,7 @@
 
 .section {
   min-height: 200px;
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.1);
   width: 60%;
   margin: auto;
   background-color: transparent;
@@ -343,7 +344,7 @@
 
 .contact {
   text-align: center;
-  margin-top: 10px;
+  margin: 10px auto;
   padding: 20px;
 }
 
@@ -461,11 +462,9 @@
   width: 60%;  
   font-family: "Baloo Bhai 2";
   color:white;
-<<<<<<< HEAD
-  background-color: rgba(0, 0, 0, 0.6);
-=======
-  background-color: transparent;
->>>>>>> 6d5ba19bd38929621a4f3f3ffcbebd0b7d449a7b
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.1);
+
   padding: 20px 0px 0px 0px;
 }
 
@@ -491,7 +490,7 @@
 }
 
 .footer ul li a{
-color: rgb(0, 75, 75);
+color: rgb(0, 53, 99);
 text-transform: uppercase;
 font-weight: bold;
 }
@@ -544,11 +543,22 @@ color: rgb(255, 95, 95);
   top: 50%;
   left: 100%;
   transform: translateX(-100%) rotate(180deg);
+  transition: 100ms transform ease-in
+  ;
 }
 .leftArr {
   top: 50%;
+  transition: 100ms transform ease-in;
   left: 0%;
-  /* transform: rotate(180deg); */
+}
+
+.rightArr:hover{
+  transform: translateX(-100%) rotate(180deg) scale(1.5);
+  transition: 100ms transform ease-in;
+}
+.leftArr:hover{
+  transform: scale(1.5);
+  transition: 100ms transform ease-in;
 }
 
 .edu {
