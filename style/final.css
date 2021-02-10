@@ -9,13 +9,13 @@
 
 .profession {
     font-size: 18px;
-    font-weight: bold;  
+    /* font-weight: bold;   */
     text-transform: uppercase;
     font-family: 'Nunito Sans', sans-serif;;
     color:  rgb(0, 117, 153);
-    height: 20px;
-    display: flex;
-    align-items: center;
+    /* height: 20px; */
+    /* display: flex;
+    align-items: center; */
     
     
     

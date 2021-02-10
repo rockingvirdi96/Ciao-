@@ -175,7 +175,7 @@ const createSkill = (skill) => {
       <div class="bar" style="width:` +
     skill.percentage +
     `%; position:relative">
-      <div class="buttonBar"></div>
+      <div class="buttonBar" title=${skill.percentage}%></div>
       </div>
     </div>
   </div>
@@ -247,3 +247,46 @@ $(".leftArr").onclick = () => {
 };
 
 $(".contact h4").innerHTML = `${userInfo.address} | ${userInfo.phone}`;
+
+// Profession animation.
+
+var professions = ["Front End Web Developer ", "Full Stack Web Developer"];
+
+var x = 0;
+var sentenceNumber = 0;
+var CurrentSentence = professions[sentenceNumber];
+var rewind = false;
+
+var intervalWrite = setInterval(write, 100);
+var intervalRemove = setInterval(() => {}, 100);
+
+function write() {
+  if (x < CurrentSentence.length && !rewind) {
+    $(".professionName").innerText += CurrentSentence[x];
+    x++;
+  } else {
+    clearInterval(intervalWrite);
+    setTimeout(() => {
+      intervalRemove = setInterval(remove, 100);
+    }, 2000);
+  }
+}
+
+function remove() {
+  if (x > 0) {
+    var newSentence = CurrentSentence.split("")
+      .slice(0, x - 1)
+      .join("");
+    $(".professionName").innerText = newSentence;
+    x--;
+  } else {
+    clearInterval(intervalRemove);
+    if (sentenceNumber < professions.length - 1) {
+      sentenceNumber++;
+    } else {
+      sentenceNumber = 0;
+    }
+    CurrentSentence = professions[sentenceNumber];
+    intervalWrite = setInterval(write, 100);
+  }
+}
