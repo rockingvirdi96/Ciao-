@@ -12,6 +12,14 @@
     .innerSection {
         width: 100%;
     }   
+    
+    .footer{
+        width: 100%;
+    }
+
+    .footer ul li{
+        grid-template-columns: 80px max-content 80px;
+    }
 
     .name {
         font-size: 25px;
