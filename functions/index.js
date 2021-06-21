@@ -14,7 +14,7 @@ const userInfo = {
   address: "rupindervirdi96@gmail.com",
   phone: "+1(438)998-1746",
   about:
-    "Hello from a striving full stack web developer with keen interest in designing and creating powerful user experience websites. Currently i am looking for a full time Job as a Full Stack Web Developer. Up until now i have been making projects for myself and my education as listed below and on Github.",
+    "Hello from a striving full stack web developer with keen interest in designing and creating powerful websites. Currently i am looking to fill up a Full Stack Web Developer's position.",
 };
 
 const education = {
@@ -28,11 +28,11 @@ const education = {
 };
 
 const experience = {
-  status: ["Dispatcher"],
-  Company: ["KS Transport"],
+  status: ["Front End Developer"],
+  Company: ["Enrage Tech"],
   Location: ["Jalandhar,India"],
   Duration: ["-- 2014 - 2017 --"],
-  Description: [],
+  Description: ['Provided front end REACT based websites already integrated with a powerful backend with various features to different clients.'],
 };
 
 const skills = {

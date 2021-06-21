@@ -97,14 +97,16 @@ a{
 .links {
     position: sticky;
     top: 0%;
-    left: 50%;
-
-    box-shadow: 0px 1px 4px 1px rgba(80, 80, 80, 0.3);
+    width: 60%;
+    margin: auto;
+    box-shadow: 0px 1px 6px 2px rgba(80, 80, 80, 0.8);
+    border-radius: 0px 0px 3px 3px;
     display: flex;
     font-family: 'Nunito Sans', sans-serif;
     color: #eee;
-    background-color: #fff;
+    background-color: rgba(0, 46, 89, 0.844);
     font-weight: bold;
+    z-index: 100;
 
 }
 
@@ -119,12 +121,18 @@ a{
     margin-bottom: 2px;
     margin: 0px 10px;
     transition: all 100ms linear;
+    color: white;
+}
+
+.links li a{
+    color: white;
+    text-shadow: none;
 }
 
 
 .links li:hover {
     transition: all 100ms linear;
-    color: rgb(0, 55, 71);
+    color: white;
     transform: scale(1.3);
 }
 
