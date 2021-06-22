@@ -31,6 +31,7 @@
 
     .links {
         font-size: 10px;
+        width: 100%;
     }
 
     .links li {
@@ -54,20 +55,21 @@
     .activities {
         flex-direction: column;
     }
-
+    
     .activity {
-        margin: 0px 5px;
-        min-height: 150px;
-        min-width: 150px;
-    }
+        /* margin: 0px 5px; */
+        margin: 2px;
+            min-height: 150px;
+            min-width: 150px;
+        }
 
-    .actGrp1 {
+    /* .actGrp1 {
         padding-left: 40px;
     }
 
     .actGrp2 {
         padding-right: 40px;
-    }
+    } */
 
     .prj-container {
         padding: 20px 20px 0px 20px;
@@ -113,22 +115,22 @@
 
 @media only screen and (max-width:1345px) {
     .activities {
-        flex-direction: column;
+        /* flex-direction: column; */
     }
 
     .activity {
-        margin: 0px 5px;
+        /* margin: 0px 5px; */
         min-height: 150px;
         min-width: 150px;
     }
 
-    .actGrp1 {
+    /* .actGrp1 {
         padding-left: 40px;
     }
 
     .actGrp2 {
         padding-right: 40px;
-    }
+    } */
 
     .info {
         font-size: 15px;
@@ -140,9 +142,66 @@
 }
 
 @media only screen and (max-width:700px) {
-    .activities {
-        flex-direction: column;
+
+    .skillss h2{
+        font-size: 24px;
+
     }
+
+    .contact h2{
+        font-size: 24px;
+
+    }
+
+    .skills .left>*,
+.skills .right>* {
+  max-height: 220px;
+  width: 250px;
+  background-color: transparent;
+  margin: 10px;
+  padding: 0px 0px 10px 0px;
+  overflow-y: scroll;
+  box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+    .activity{
+        min-height: 100px;
+        min-width: 100px;
+    }
+    .hobbies h2{
+        font-size: 24px;
+    }
+
+    #duration {
+        font-size: 18px;
+        letter-spacing: 2px;
+        font-family: 'Nunito Sans', sans-serif;;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      
+      #course {
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Nunito Sans', sans-serif;;
+        text-align: center;
+        
+      }
+      
+      #institute {
+        font-size: 16px;
+        letter-spacing: 1px;
+        margin: 5px 0px;
+        font-weight: bold;
+        font-family: "Nunito Sans";
+        text-align: center;
+      }
+
+      #location {
+        font-size: 12px;
+      }
+    
 
     .links li a:hover {
         transition: all 200ms linear;

@@ -280,7 +280,7 @@ scroll-behavior: smooth;
   text-align: center;
   font-family: "Baloo Bhai 2";
   border-radius: 5px;
-  border: 2px solid rgba(0, 68, 255, 0.8);
+  border: 2px solid rgb(0, 117, 153);
 }
 
 .contact form textarea {
