@@ -32,6 +32,7 @@
     .links {
         font-size: 10px;
         width: 100%;
+        padding: 2px 0px
     }
 
     .links li {
@@ -62,14 +63,6 @@
             min-height: 150px;
             min-width: 150px;
         }
-
-    /* .actGrp1 {
-        padding-left: 40px;
-    }
-
-    .actGrp2 {
-        padding-right: 40px;
-    } */
 
     .prj-container {
         padding: 20px 20px 0px 20px;
@@ -203,11 +196,7 @@
       }
     
 
-    .links li a:hover {
-        transition: all 200ms linear;
-        color: rgb(0, 55, 71);
-        font-size: 12px;
-    }
+    
 
     .prj-container {
         padding: 20px 20px 0px 20px;

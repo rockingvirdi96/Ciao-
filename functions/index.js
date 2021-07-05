@@ -14,7 +14,7 @@ const userInfo = {
   address: "rupindervirdi96@gmail.com",
   phone: "+1(438)998-1746",
   about:
-    "Hello from a striving full stack web developer with keen interest in designing and creating powerful websites. Currently i am looking to fill up a Full Stack Web Developer's position.",
+    "Full Stack Web Developer with 3+ years of experience in building scalable web applications using modern development stack. I have experience in teaching programming to college students. Worked for various clients over the years on freelance projects to help them to achieve their business goals.",
 };
 
 const education = {
@@ -24,7 +24,7 @@ const education = {
   ],
   Institute: ["Guru Nanak Dev University", "LaSalle College"],
   Location: ["Amritsar,India", "Montreal, Quebec"],
-  Duration: ["2017", "2020"],
+  Duration: ["2017", "2021"],
 };
 
 const experience = {
@@ -32,13 +32,15 @@ const experience = {
   Company: ["Enrage Tech"],
   Location: ["Jalandhar,India"],
   Duration: ["-- 2014 - 2017 --"],
-  Description: ['Provided front end REACT based websites already integrated with a powerful backend with various features to different clients.'],
+  Description: [
+    "Provided front end REACT based websites already integrated with a powerful backend with various features to different clients.",
+  ],
 };
 
 const skills = {
   CODING: [
-    { name: "REACT", percentage: "75" },
-    { name: "VUE", percentage: "68" },
+    { name: "REACT", percentage: "85" },
+    { name: "VUE", percentage: "75" },
     { name: "ANDROID", percentage: "65" },
     { name: "JAVA", percentage: "80" },
     { name: "C++", percentage: "75" },
@@ -74,62 +76,49 @@ const projects = [
   {
     name: "FACEBOOK-CLONE",
     img: "./assets/facebook-clone.png",
-    desc:
-      "Facebook-clone is a website similar to facebook providing some important features as facebook. This app is built by me as my final project for college. This app has similar design to facebook and some of the features are same too.",
+    desc: "Facebook-clone is a website similar to facebook providing some important features as facebook. This app is built by me as my final project for college. This app has similar design to facebook and some of the features are same too.",
     link: "https://facebook-clone-v.herokuapp.com/",
   },
   {
     name: "ISSUES TRACKER",
-    img:
-      "https://www.freeiconspng.com/thumbs/no-image-icon/no-image-icon-32.png",
-    desc:
-      "Issues tracker is an application that could be a help to the society to improve the condition of roads. This application allows any user to report any potholes or bumps found on the street.",
+    img: "https://www.freeiconspng.com/thumbs/no-image-icon/no-image-icon-32.png",
+    desc: "Issues tracker is an application that could be a help to the society to improve the condition of roads. This application allows any user to report any potholes or bumps found on the street.",
     link: "https://issuestrackerr.herokuapp.com/",
   },
   {
     name: "MUSEUM",
     img: "./assets/museum.png",
-    desc:
-      "Museum is a music player made with android studio as a course project. Used Figma for design and java for coding. This app is being developed as a part of my course Android Development.",
+    desc: "Museum is a music player made with android studio as a course project. Used Figma for design and java for coding. This app is being developed as a part of my course Android Development.",
     link: "https://github.com/rupindervirdi96/museum",
   },
   {
     name: "REACTOR",
-    img:
-      "https://www.freeiconspng.com/thumbs/no-image-icon/no-image-icon-32.png",
-    desc:
-      "Reactor is an ultimate idea to sell or promote React components as products online by unlimited number of users throughout the world. Server side has been finished already. Design is currently under development.",
+    img: "https://www.freeiconspng.com/thumbs/no-image-icon/no-image-icon-32.png",
+    desc: "Reactor is an ultimate idea to sell or promote React components as products online by unlimited number of users throughout the world. Server side has been finished already. Design is currently under development.",
     link: "https://rupindervirdi96.github.io/TRIVIA-GAME/FinalProject",
   },
   {
     name: "HANGMAN",
-    img:
-      "https://s3.amazonaws.com/iconbros/icons/icon_pngs/000/001/955/original/hangman.png?1560586372",
-    desc:
-      "The classic game made with react providing a great design and additional features on the way. Like anyone can add additional categories and register their score to the wall of fame.",
+    img: "https://s3.amazonaws.com/iconbros/icons/icon_pngs/000/001/955/original/hangman.png?1560586372",
+    desc: "The classic game made with react providing a great design and additional features on the way. Like anyone can add additional categories and register their score to the wall of fame.",
     link: "https://rupindervirdi96.github.io/TRIVIA-GAME/FinalProject",
   },
   {
     name: "LOOPER",
-    img:
-      "https://www.freeiconspng.com/thumbs/no-image-icon/no-image-icon-32.png",
-    desc:
-      "Looper is a social media application that I made during last winter break using MERN stack",
+    img: "https://www.freeiconspng.com/thumbs/no-image-icon/no-image-icon-32.png",
+    desc: "Looper is a social media application that I made during last winter break using MERN stack",
     link: "https://rupindervirdi96.github.io/TRIVIA-GAME/FinalProject",
   },
   {
     name: "TRIVIA",
-    img:
-      "https://lh3.googleusercontent.com/proxy/VwS8VWhc6oAkcpHrbOSR288q7JctsxTOCXKtvZUHj7tQk2DUy4AjIWVCp_k_vI3fDe5NGJhETm6XrSGamSNEV3JQ",
-    desc:
-      "TRIVIA was developed by me as my final project for the course of Advanced Object Oriented Programming. This project helped me to learn the concept of classes and objects very well.",
+    img: "https://lh3.googleusercontent.com/proxy/VwS8VWhc6oAkcpHrbOSR288q7JctsxTOCXKtvZUHj7tQk2DUy4AjIWVCp_k_vI3fDe5NGJhETm6XrSGamSNEV3JQ",
+    desc: "TRIVIA was developed by me as my final project for the course of Advanced Object Oriented Programming. This project helped me to learn the concept of classes and objects very well.",
     link: "https://rupindervirdi96.github.io/TRIVIA-GAME/FinalProject",
   },
   {
     name: "CALCULATOR REACT",
     img: "./assets/calc.png",
-    desc:
-      "Calculator react is a very basic calculator. One of my first apps i made with ",
+    desc: "Calculator react is a very basic calculator. One of my first apps i made with ",
     link: "https://rupindervirdi96.github.io/CalculatorReact/",
   },
 ];
@@ -138,29 +127,11 @@ const projects = [
 // $(".prjName").innerText = projects[0].name;
 // $(".prjPic").style = "background-image: url(" + projects[0].img + ")";
 // $(".prjDesc span").innerText = projects[0].desc;
-// $(".projectLink").href = projects[0].link;
 
 //Initialize User
 $(".name").innerText = userInfo.name;
-// $('.profession').innerText = userInfo.profession;
 $(".about .info").innerText = userInfo.about;
 
-//Toggle Projects
-// $(".changeProject").onclick = () => {
-//   prjCount = prjCount + 1;
-//   if (prjCount == projects.length) {
-//     prjCount = 0;
-//   }
-//   $(".prj-container").classList.add("gayab");
-//   setTimeout(() => {
-//     $(".prjName").innerText = projects[prjCount].name;
-//     $(".prjPic").style =
-//       "background-image: url(" + projects[prjCount].img + ")";
-//     $(".prjDesc span").innerText = projects[prjCount].desc;
-//     $(".projectLink").href = projects[prjCount].link;
-//     $(".prj-container").classList.remove("gayab");
-//   }, 500);
-// };
 var y = 0;
 
 //Add Skills
@@ -290,3 +261,5 @@ function remove() {
     intervalWrite = setInterval(write, 100);
   }
 }
+
+$(".copyright span").innerText = new Date().getFullYear();
