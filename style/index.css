@@ -10,7 +10,7 @@ scroll-behavior: smooth;
   position: relative;
   width: 100%;
   height: auto;
-  background: url(https://web.whatsapp.com/img/bg-chat-tile_9e8a2898faedb7db9bf5638405cf81ae.png), rgba(237, 237, 237, 0.9);
+  background: url(https://web.whatsapp.com/img/bg-chat-tile_9e8a2898faedb7db9bf5638405cf81ae.png), rgba(237, 237, 237);
   background-blend-mode: soft-light;
 }
 
