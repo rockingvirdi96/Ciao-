@@ -517,3 +517,388 @@ color: rgb(255, 206, 206);
   font-family: "Nunito Sans";
   text-align: center;
 }
+
+.name {
+  font-size: 30px;
+  font-family: 'Nunito Sans', sans-serif;;
+  letter-spacing: 5px;
+  text-align: center;
+  color:  rgb(0, 117, 153);
+  font-weight: bold;
+}
+
+.profession {
+  font-size: 18px;
+  /* font-weight: bold;   */
+  text-transform: uppercase;
+  font-family: 'Nunito Sans', sans-serif;;
+  color:  rgb(0, 117, 153);
+  /* height: 20px; */
+  /* display: flex;
+  align-items: center; */
+  
+  
+  
+}
+
+.buttons {
+  width: 60%;
+  margin: 10px auto;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#btnHireMe,
+#getCv {
+  padding: 8px;    
+  font-family: 'Nunito Sans', sans-serif;
+  border-radius: 4px;
+  border: none;
+  font-weight: bolder;
+  font-size: 14px;
+  margin: 50px 0px 20px 0px;
+  background-color: transparent;
+  transition: 150ms all linear;
+}
+
+#btnHireMe a,#getCv a{
+  color: #4f4f4f;
+}
+
+
+#btnHireMe:hover,
+#getCv:hover {
+  transition: 150ms all linear;
+  /* background: linear-gradient(45deg, rgba(255, 0, 0, 0.8), rgba(255, 73, 73, 0.8)); */
+  background-color: #4fa4ca
+
+  ;
+}
+
+.profile-pic {
+  height: 180px;
+  width: 180px;
+  box-shadow: 0px 5px 10px 2px rgba(80, 80, 80, 0.3);
+  margin: 40px 0px;
+  border: 5px solid white;
+  border-radius: 50%;
+  background-image: url(../assets/profile.jpg);
+  background-position: center;
+  background-size: cover;
+}
+a{
+
+  text-decoration: none;
+}
+.intro a {
+  text-decoration: none;
+  color:  rgb(0, 44, 85);
+  
+}
+
+.intro {
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.intro .innerSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: black;
+  padding: 50px 50px 20px 50px;
+}
+
+.links {
+  position: sticky;
+  top: 0%;
+  width: 60%;
+  margin: auto;
+  box-shadow: 0px 1px 6px 2px rgba(80, 80, 80, 0.8);
+  border-radius: 0px 0px 3px 3px;
+  display: flex;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #eee;
+  background-color: rgba(0, 46, 89, 0.844);
+  font-weight: bold;
+  z-index: 100;
+  padding: 10px 0px;
+
+}
+
+
+.links li {
+
+  flex: 1;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  transition: all 100ms linear;
+}
+
+.links li a{
+  color: white;
+}
+
+
+.links li:hover {
+  transition: all 100ms linear;
+  color: white;
+  transform: scale(1.4);
+  transition: all 100ms linear;
+}
+
+
+.about {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(0, 117, 153);
+}
+
+.info {
+  width: 90%;
+  margin: auto;
+  font-size: 20px;
+  text-align: justify;
+  font-family: 'Nunito Sans', sans-serif;
+  color: white;
+  
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width:800px) {
+
+  .education {
+      height: auto;
+      padding: 0px 10px;
+  }
+
+  .section {
+      width: 100%;
+  }
+
+  .innerSection {
+      width: 100%;
+  }   
+  
+  .footer{
+      width: 100%;
+  }
+
+  .footer ul li{
+      grid-template-columns: 80px max-content 80px;
+  }
+
+  .name {
+      font-size: 25px;
+  }
+
+  .profession {
+      font-size: 16px;
+  }
+
+  .links {
+      width: 100%;
+      padding: 10px 0px
+  }
+
+  .links li {
+      font-size: 12px;
+  }
+  
+  .profile-pic {
+      height: 140px;
+      width: 140px;
+      box-shadow: 0px 5px 10px 2px rgba(80, 80, 80, 0.3);
+      margin: 20px 0px;
+      border: 5px solid white;
+      border-radius: 50%;
+
+  }
+
+  .activities {
+      flex-direction: column;
+  }
+  
+  .activity {
+      /* margin: 0px 5px; */
+      margin: 2px;
+          min-height: 150px;
+          min-width: 150px;
+      }
+
+  .prj-container {
+      padding: 20px 20px 0px 20px;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .prjImg {
+      align-items: center;
+  }
+
+  .prjDesc span {
+      text-align: center;
+  }
+
+  .info {
+      font-size: 15px;
+      padding: 30px 10px;
+  }
+
+  .prjDesc {
+      align-items: center;
+  }
+
+  .prj-container {
+      height: 480px;
+  }
+
+  .prjDesc button {
+      margin-left: 0px;
+  }
+
+
+}
+
+@media only screen and (max-width:1200px) {
+  .skills {
+      display: flex;
+      flex-direction: column;
+  }
+}
+
+
+@media only screen and (max-width:1345px) {
+  .activities {
+      /* flex-direction: column; */
+  }
+
+  .activity {
+      /* margin: 0px 5px; */
+      min-height: 150px;
+      min-width: 150px;
+  }
+
+  /* .actGrp1 {
+      padding-left: 40px;
+  }
+
+  .actGrp2 {
+      padding-right: 40px;
+  } */
+
+  .info {
+      font-size: 15px;
+      padding: 30px 10px;
+  }
+
+
+
+}
+
+@media only screen and (max-width:700px) {
+
+  .skillss h2{
+      font-size: 24px;
+
+  }
+
+  .contact h2{
+      font-size: 24px;
+
+  }
+
+  .skills .left>*,
+.skills .right>* {
+max-height: 220px;
+width: 250px;
+background-color: transparent;
+margin: 10px;
+padding: 0px 0px 10px 0px;
+overflow-y: scroll;
+box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.2);
+background-color: #fff;
+}
+
+  .activity{
+      min-height: 100px;
+      min-width: 100px;
+  }
+  .hobbies h2{
+      font-size: 24px;
+  }
+
+  #duration {
+      font-size: 18px;
+      letter-spacing: 2px;
+      font-family: 'Nunito Sans', sans-serif;;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    
+    #course {
+      font-size: 20px;
+      font-weight: bold;
+      font-family: 'Nunito Sans', sans-serif;;
+      text-align: center;
+      
+    }
+    
+    #institute {
+      font-size: 16px;
+      letter-spacing: 1px;
+      margin: 5px 0px;
+      font-weight: bold;
+      font-family: "Nunito Sans";
+      text-align: center;
+    }
+
+    #location {
+      font-size: 12px;
+    }
+  
+
+  
+
+  .prj-container {
+      padding: 20px 20px 0px 20px;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .prjImg {
+      align-items: center;
+  }
+
+
+  .prjDesc span {
+      text-align: center;
+  }
+
+  .info {
+      font-size: 15px;
+      padding: 30px 10px;
+  }
+
+  .prjDesc {
+      align-items: center;
+  }
+
+  .prj-container {
+      height: 480px;
+  }
+
+
+}
